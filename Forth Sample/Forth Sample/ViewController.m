@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DemoView.h"
+#import "AppDelegate.h"
 @interface ViewController ()
 @property (nonatomic, strong) DemoView *demoView;
 @end
@@ -38,6 +39,18 @@
     
     //log to console
     NSLog(@"log string to log %@", stringToPrint);
+    
+    //call delegate
+    if (self.myDelegate) {
+        [self.myDelegate delegateCallBack];
+    }
+    
+    //scream to app delegate directly via shared instance
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    [appDelegate someGlobalScreamingMethod];
+    
+    //notify via notification center
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"sample.notification.name" object:nil userInfo:nil];
     
 }
 

@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol SampleDelegate <NSObject>
+
+-(void) delegateCallBack;
+
+@end
+
 @interface ViewController : UIViewController
+@property (weak) id<SampleDelegate> myDelegate;
 
 @property (weak, nonatomic) IBOutlet UITextField    *textField;
 @property (weak, nonatomic) IBOutlet UILabel        *label;

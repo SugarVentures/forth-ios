@@ -7,9 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
-@interface AppDelegate ()
-
+#import "ViewController.h"
+@interface AppDelegate () <SampleDelegate>
+@property (nonatomic, strong) ViewController *myViewController;
 @end
 
 @implementation AppDelegate
@@ -17,6 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.myViewController = (ViewController*) self.window.rootViewController;
+    self.myViewController.myDelegate = self;
+    NSLog(@"now we has a reference to %@", self.myViewController);
+
+    
     return YES;
 }
 
@@ -36,10 +41,23 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveSampleNotification:) name:@"sample.notification.name" object:nil];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+
+-(void) didReceiveSampleNotification:(NSNotification*) notification{
+    NSLog(@"received message via notification center");
+}
+
+-(void)someGlobalScreamingMethod{
+    NSLog(@"received message via direct invoke");
+}
+#pragma mark - implemetation of SampleDelgate
+-(void)delegateCallBack{
+    NSLog(@"received message via direct delegate call back");
+}
 @end
