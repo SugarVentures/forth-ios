@@ -251,7 +251,7 @@ static const GLbyte indices[] = {
         [self compileShaders];
         [self setupVBOs];
         
-        _floorTexture = [self setupTexture:@"test.png"];
+        _floorTexture = [self setupTexture:@"test"];
         //[self setupDisplayLink];
         [self render];
 
