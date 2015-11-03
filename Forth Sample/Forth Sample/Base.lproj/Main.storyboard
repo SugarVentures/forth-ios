@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cde-Wg-L2L">
-                                <rect key="frame" x="20" y="151" width="560" height="50"/>
+                                <rect key="frame" x="20" y="150.5" width="560" height="50"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.4777488426" green="0.87034143519999996" blue="0.5962673611" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -44,12 +45,15 @@
                                 </connections>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjS-Iz-7gF">
-                                <rect key="frame" x="20" y="227" width="560" height="353"/>
+                                <rect key="frame" x="20" y="226.5" width="560" height="353.5"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cjS-Iz-7gF" secondAttribute="height" multiplier="560:353" id="aqq-GY-LF2"/>
+                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpR-qS-dPA">
-                                <rect key="frame" x="20" y="105" width="560" height="21"/>
+                                <rect key="frame" x="20" y="105" width="560" height="20.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -60,14 +64,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gYe-HX-k6b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="5i3-WQ-Fb9"/>
-                            <constraint firstAttribute="trailing" secondItem="cjS-Iz-7gF" secondAttribute="trailing" constant="20" id="6z9-PP-YSF"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cjS-Iz-7gF" secondAttribute="trailing" constant="20" id="6z9-PP-YSF"/>
                             <constraint firstItem="cjS-Iz-7gF" firstAttribute="top" secondItem="Cde-Wg-L2L" secondAttribute="bottom" constant="26" id="F3t-00-l7z"/>
                             <constraint firstAttribute="trailing" secondItem="Cde-Wg-L2L" secondAttribute="trailing" constant="20" id="Hyr-vY-poe"/>
                             <constraint firstItem="Cde-Wg-L2L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="JEB-dt-nwE"/>
                             <constraint firstItem="mpR-qS-dPA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="MW6-p2-n7F"/>
+                            <constraint firstAttribute="trailing" secondItem="cjS-Iz-7gF" secondAttribute="trailing" priority="250" constant="20" id="OXU-XT-hF0"/>
                             <constraint firstItem="gYe-HX-k6b" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31" id="RTw-qb-U57"/>
                             <constraint firstAttribute="trailing" secondItem="mpR-qS-dPA" secondAttribute="trailing" constant="20" id="Tgi-v6-Jdu"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cjS-Iz-7gF" secondAttribute="bottom" constant="20" id="Yap-25-ZyY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="cjS-Iz-7gF" secondAttribute="bottom" constant="20" id="Yap-25-ZyY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cjS-Iz-7gF" secondAttribute="bottom" priority="250" constant="20" id="ZC7-gI-kHr"/>
                             <constraint firstItem="mpR-qS-dPA" firstAttribute="top" secondItem="gYe-HX-k6b" secondAttribute="bottom" constant="24" id="awu-E9-1cm"/>
                             <constraint firstAttribute="trailing" secondItem="gYe-HX-k6b" secondAttribute="trailing" constant="20" id="eT7-dA-PQC"/>
                             <constraint firstItem="Cde-Wg-L2L" firstAttribute="top" secondItem="mpR-qS-dPA" secondAttribute="bottom" constant="25" id="jOt-9L-1UX"/>
