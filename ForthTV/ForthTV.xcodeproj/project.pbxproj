@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD57D6531C3CCC4100DEDDCC /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D6521C3CCC4100DEDDCC /* LoginController.swift */; };
+		FD57D6551C3CCC5300DEDDCC /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D6541C3CCC5300DEDDCC /* RegisterController.swift */; };
+		FD57D6581C3CCCEE00DEDDCC /* VideoDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D6571C3CCCEE00DEDDCC /* VideoDetailController.swift */; };
+		FD57D65A1C3CCD0600DEDDCC /* ChattingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D6591C3CCD0600DEDDCC /* ChattingController.swift */; };
+		FD57D65C1C3CCD1A00DEDDCC /* ViewersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D65B1C3CCD1A00DEDDCC /* ViewersController.swift */; };
+		FD57D6631C3CCD8900DEDDCC /* BroadcastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D6621C3CCD8900DEDDCC /* BroadcastController.swift */; };
+		FD57D6651C3CCD9900DEDDCC /* RecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D6641C3CCD9900DEDDCC /* RecordController.swift */; };
+		FD57D6681C3CCDC000DEDDCC /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D6671C3CCDC000DEDDCC /* UserProfileController.swift */; };
+		FD57D66C1C3CCE1200DEDDCC /* VisitterProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D66B1C3CCE1200DEDDCC /* VisitterProfileController.swift */; };
+		FD57D66E1C3CCE9800DEDDCC /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D66D1C3CCE9800DEDDCC /* MenuController.swift */; };
+		FD57D6721C3CCF1900DEDDCC /* AppConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D6711C3CCF1900DEDDCC /* AppConfigure.swift */; };
+		FD57D6741C3CCF2D00DEDDCC /* ServiceConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D6731C3CCF2D00DEDDCC /* ServiceConfigure.swift */; };
+		FDFFEA871C3A03D900130400 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDFFEA851C3A03D900130400 /* Main.storyboard */; };
+		FDFFEA891C3A03D900130400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDFFEA881C3A03D900130400 /* Assets.xcassets */; };
+		FDFFEA8C1C3A03D900130400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDFFEA8A1C3A03D900130400 /* LaunchScreen.storyboard */; };
+		FDFFEA971C3A03D900130400 /* ForthTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFFEA961C3A03D900130400 /* ForthTVTests.swift */; };
+		FDFFEAA21C3A03D900130400 /* ForthTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFFEAA11C3A03D900130400 /* ForthTVUITests.swift */; };
+		FDFFEABB1C3A177300130400 /* AccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFFEAB71C3A177300130400 /* AccountController.swift */; };
+		FDFFEABC1C3A177300130400 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFFEAB81C3A177300130400 /* AppDelegate.swift */; };
+		FDFFEABD1C3A177300130400 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFFEAB91C3A177300130400 /* ViewController.swift */; };
+		FDFFEABE1C3A177300130400 /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFFEABA1C3A177300130400 /* WelcomeController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDFFEA931C3A03D900130400 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDFFEA761C3A03D900130400 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDFFEA7D1C3A03D900130400;
+			remoteInfo = ForthTV;
+		};
+		FDFFEA9E1C3A03D900130400 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDFFEA761C3A03D900130400 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDFFEA7D1C3A03D900130400;
+			remoteInfo = ForthTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD57D6521C3CCC4100DEDDCC /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginController.swift; path = 02.Controllers/LoginController.swift; sourceTree = "<group>"; };
+		FD57D6541C3CCC5300DEDDCC /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterController.swift; path = 02.Controllers/RegisterController.swift; sourceTree = "<group>"; };
+		FD57D6571C3CCCEE00DEDDCC /* VideoDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoDetailController.swift; path = 02.Controllers/VideoDetailController.swift; sourceTree = "<group>"; };
+		FD57D6591C3CCD0600DEDDCC /* ChattingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChattingController.swift; path = 02.Controllers/ChattingController.swift; sourceTree = "<group>"; };
+		FD57D65B1C3CCD1A00DEDDCC /* ViewersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewersController.swift; path = 02.Controllers/ViewersController.swift; sourceTree = "<group>"; };
+		FD57D6621C3CCD8900DEDDCC /* BroadcastController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BroadcastController.swift; path = 02.Controllers/BroadcastController.swift; sourceTree = "<group>"; };
+		FD57D6641C3CCD9900DEDDCC /* RecordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordController.swift; path = 02.Controllers/RecordController.swift; sourceTree = "<group>"; };
+		FD57D6671C3CCDC000DEDDCC /* UserProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserProfileController.swift; path = 02.Controllers/UserProfileController.swift; sourceTree = "<group>"; };
+		FD57D66B1C3CCE1200DEDDCC /* VisitterProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VisitterProfileController.swift; path = 02.Controllers/VisitterProfileController.swift; sourceTree = "<group>"; };
+		FD57D66D1C3CCE9800DEDDCC /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuController.swift; path = 02.Controllers/MenuController.swift; sourceTree = "<group>"; };
+		FD57D6711C3CCF1900DEDDCC /* AppConfigure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppConfigure.swift; path = 01.Common/AppConfigure.swift; sourceTree = "<group>"; };
+		FD57D6731C3CCF2D00DEDDCC /* ServiceConfigure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceConfigure.swift; path = 01.Common/ServiceConfigure.swift; sourceTree = "<group>"; };
+		FDFFEA7E1C3A03D900130400 /* ForthTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForthTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDFFEA861C3A03D900130400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDFFEA881C3A03D900130400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDFFEA8B1C3A03D900130400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDFFEA8D1C3A03D900130400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDFFEA921C3A03D900130400 /* ForthTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForthTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDFFEA961C3A03D900130400 /* ForthTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthTVTests.swift; sourceTree = "<group>"; };
+		FDFFEA981C3A03D900130400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDFFEA9D1C3A03D900130400 /* ForthTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForthTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDFFEAA11C3A03D900130400 /* ForthTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthTVUITests.swift; sourceTree = "<group>"; };
+		FDFFEAA31C3A03D900130400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDFFEAB71C3A177300130400 /* AccountController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountController.swift; path = 02.Controllers/AccountController.swift; sourceTree = "<group>"; };
+		FDFFEAB81C3A177300130400 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = 02.Controllers/AppDelegate.swift; sourceTree = "<group>"; };
+		FDFFEAB91C3A177300130400 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = 02.Controllers/ViewController.swift; sourceTree = "<group>"; };
+		FDFFEABA1C3A177300130400 /* WelcomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeController.swift; path = 02.Controllers/WelcomeController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDFFEA7B1C3A03D900130400 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDFFEA8F1C3A03D900130400 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDFFEA9A1C3A03D900130400 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD57D6501C3CCB2C00DEDDCC /* 00.SlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				FDFFEAB91C3A177300130400 /* ViewController.swift */,
+				FD57D66D1C3CCE9800DEDDCC /* MenuController.swift */,
+			);
+			name = 00.SlideMenu;
+			sourceTree = "<group>";
+		};
+		FD57D6511C3CCC0900DEDDCC /* 01.Account */ = {
+			isa = PBXGroup;
+			children = (
+				FDFFEAB71C3A177300130400 /* AccountController.swift */,
+				FD57D6521C3CCC4100DEDDCC /* LoginController.swift */,
+				FD57D6541C3CCC5300DEDDCC /* RegisterController.swift */,
+			);
+			name = 01.Account;
+			sourceTree = "<group>";
+		};
+		FD57D6561C3CCCB500DEDDCC /* 03.VideoDetails */ = {
+			isa = PBXGroup;
+			children = (
+				FD57D6571C3CCCEE00DEDDCC /* VideoDetailController.swift */,
+				FD57D6591C3CCD0600DEDDCC /* ChattingController.swift */,
+				FD57D65B1C3CCD1A00DEDDCC /* ViewersController.swift */,
+			);
+			name = 03.VideoDetails;
+			sourceTree = "<group>";
+		};
+		FD57D65D1C3CCD2900DEDDCC /* 04.Broadcasting */ = {
+			isa = PBXGroup;
+			children = (
+				FD57D6621C3CCD8900DEDDCC /* BroadcastController.swift */,
+				FD57D6641C3CCD9900DEDDCC /* RecordController.swift */,
+			);
+			name = 04.Broadcasting;
+			sourceTree = "<group>";
+		};
+		FD57D6661C3CCDA800DEDDCC /* 05.Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FD57D6671C3CCDC000DEDDCC /* UserProfileController.swift */,
+				FD57D66B1C3CCE1200DEDDCC /* VisitterProfileController.swift */,
+			);
+			name = 05.Profile;
+			sourceTree = "<group>";
+		};
+		FD57D66F1C3CCECC00DEDDCC /* 00.Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = 00.Extensions;
+			sourceTree = "<group>";
+		};
+		FD57D6701C3CCED700DEDDCC /* 01.App */ = {
+			isa = PBXGroup;
+			children = (
+				FD57D6711C3CCF1900DEDDCC /* AppConfigure.swift */,
+				FD57D6731C3CCF2D00DEDDCC /* ServiceConfigure.swift */,
+			);
+			name = 01.App;
+			sourceTree = "<group>";
+		};
+		FDFFEA751C3A03D900130400 = {
+			isa = PBXGroup;
+			children = (
+				FDFFEA801C3A03D900130400 /* ForthTV */,
+				FDFFEA951C3A03D900130400 /* ForthTVTests */,
+				FDFFEAA01C3A03D900130400 /* ForthTVUITests */,
+				FDFFEA7F1C3A03D900130400 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDFFEA7F1C3A03D900130400 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDFFEA7E1C3A03D900130400 /* ForthTV.app */,
+				FDFFEA921C3A03D900130400 /* ForthTVTests.xctest */,
+				FDFFEA9D1C3A03D900130400 /* ForthTVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDFFEA801C3A03D900130400 /* ForthTV */ = {
+			isa = PBXGroup;
+			children = (
+				FDFFEAB21C3A15A200130400 /* 01.Common */,
+				FDFFEAAF1C3A154E00130400 /* 00.Models */,
+				FDFFEAB01C3A155F00130400 /* 02.Controllers */,
+				FDFFEAB11C3A158600130400 /* 03.Libs */,
+				FDFFEA851C3A03D900130400 /* Main.storyboard */,
+				FDFFEA881C3A03D900130400 /* Assets.xcassets */,
+				FDFFEA8A1C3A03D900130400 /* LaunchScreen.storyboard */,
+				FDFFEA8D1C3A03D900130400 /* Info.plist */,
+			);
+			path = ForthTV;
+			sourceTree = "<group>";
+		};
+		FDFFEA951C3A03D900130400 /* ForthTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDFFEA961C3A03D900130400 /* ForthTVTests.swift */,
+				FDFFEA981C3A03D900130400 /* Info.plist */,
+			);
+			path = ForthTVTests;
+			sourceTree = "<group>";
+		};
+		FDFFEAA01C3A03D900130400 /* ForthTVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FDFFEAA11C3A03D900130400 /* ForthTVUITests.swift */,
+				FDFFEAA31C3A03D900130400 /* Info.plist */,
+			);
+			path = ForthTVUITests;
+			sourceTree = "<group>";
+		};
+		FDFFEAAF1C3A154E00130400 /* 00.Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = 00.Models;
+			sourceTree = "<group>";
+		};
+		FDFFEAB01C3A155F00130400 /* 02.Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FDFFEAB81C3A177300130400 /* AppDelegate.swift */,
+				FDFFEABA1C3A177300130400 /* WelcomeController.swift */,
+				FD57D6501C3CCB2C00DEDDCC /* 00.SlideMenu */,
+				FD57D6511C3CCC0900DEDDCC /* 01.Account */,
+				FD57D6561C3CCCB500DEDDCC /* 03.VideoDetails */,
+				FD57D65D1C3CCD2900DEDDCC /* 04.Broadcasting */,
+				FD57D6661C3CCDA800DEDDCC /* 05.Profile */,
+			);
+			name = 02.Controllers;
+			sourceTree = "<group>";
+		};
+		FDFFEAB11C3A158600130400 /* 03.Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = 03.Libs;
+			sourceTree = "<group>";
+		};
+		FDFFEAB21C3A15A200130400 /* 01.Common */ = {
+			isa = PBXGroup;
+			children = (
+				FD57D66F1C3CCECC00DEDDCC /* 00.Extensions */,
+				FD57D6701C3CCED700DEDDCC /* 01.App */,
+			);
+			name = 01.Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDFFEA7D1C3A03D900130400 /* ForthTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDFFEAA61C3A03D900130400 /* Build configuration list for PBXNativeTarget "ForthTV" */;
+			buildPhases = (
+				FDFFEA7A1C3A03D900130400 /* Sources */,
+				FDFFEA7B1C3A03D900130400 /* Frameworks */,
+				FDFFEA7C1C3A03D900130400 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ForthTV;
+			productName = ForthTV;
+			productReference = FDFFEA7E1C3A03D900130400 /* ForthTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDFFEA911C3A03D900130400 /* ForthTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDFFEAA91C3A03D900130400 /* Build configuration list for PBXNativeTarget "ForthTVTests" */;
+			buildPhases = (
+				FDFFEA8E1C3A03D900130400 /* Sources */,
+				FDFFEA8F1C3A03D900130400 /* Frameworks */,
+				FDFFEA901C3A03D900130400 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDFFEA941C3A03D900130400 /* PBXTargetDependency */,
+			);
+			name = ForthTVTests;
+			productName = ForthTVTests;
+			productReference = FDFFEA921C3A03D900130400 /* ForthTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FDFFEA9C1C3A03D900130400 /* ForthTVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDFFEAAC1C3A03D900130400 /* Build configuration list for PBXNativeTarget "ForthTVUITests" */;
+			buildPhases = (
+				FDFFEA991C3A03D900130400 /* Sources */,
+				FDFFEA9A1C3A03D900130400 /* Frameworks */,
+				FDFFEA9B1C3A03D900130400 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDFFEA9F1C3A03D900130400 /* PBXTargetDependency */,
+			);
+			name = ForthTVUITests;
+			productName = ForthTVUITests;
+			productReference = FDFFEA9D1C3A03D900130400 /* ForthTVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDFFEA761C3A03D900130400 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Hanh Vo";
+				TargetAttributes = {
+					FDFFEA7D1C3A03D900130400 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					FDFFEA911C3A03D900130400 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = FDFFEA7D1C3A03D900130400;
+					};
+					FDFFEA9C1C3A03D900130400 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = FDFFEA7D1C3A03D900130400;
+					};
+				};
+			};
+			buildConfigurationList = FDFFEA791C3A03D900130400 /* Build configuration list for PBXProject "ForthTV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDFFEA751C3A03D900130400;
+			productRefGroup = FDFFEA7F1C3A03D900130400 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDFFEA7D1C3A03D900130400 /* ForthTV */,
+				FDFFEA911C3A03D900130400 /* ForthTVTests */,
+				FDFFEA9C1C3A03D900130400 /* ForthTVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDFFEA7C1C3A03D900130400 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDFFEA8C1C3A03D900130400 /* LaunchScreen.storyboard in Resources */,
+				FDFFEA891C3A03D900130400 /* Assets.xcassets in Resources */,
+				FDFFEA871C3A03D900130400 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDFFEA901C3A03D900130400 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDFFEA9B1C3A03D900130400 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDFFEA7A1C3A03D900130400 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDFFEABC1C3A177300130400 /* AppDelegate.swift in Sources */,
+				FD57D66C1C3CCE1200DEDDCC /* VisitterProfileController.swift in Sources */,
+				FD57D65A1C3CCD0600DEDDCC /* ChattingController.swift in Sources */,
+				FD57D6681C3CCDC000DEDDCC /* UserProfileController.swift in Sources */,
+				FD57D6741C3CCF2D00DEDDCC /* ServiceConfigure.swift in Sources */,
+				FDFFEABE1C3A177300130400 /* WelcomeController.swift in Sources */,
+				FD57D65C1C3CCD1A00DEDDCC /* ViewersController.swift in Sources */,
+				FD57D6551C3CCC5300DEDDCC /* RegisterController.swift in Sources */,
+				FDFFEABD1C3A177300130400 /* ViewController.swift in Sources */,
+				FD57D66E1C3CCE9800DEDDCC /* MenuController.swift in Sources */,
+				FD57D6581C3CCCEE00DEDDCC /* VideoDetailController.swift in Sources */,
+				FD57D6651C3CCD9900DEDDCC /* RecordController.swift in Sources */,
+				FD57D6721C3CCF1900DEDDCC /* AppConfigure.swift in Sources */,
+				FDFFEABB1C3A177300130400 /* AccountController.swift in Sources */,
+				FD57D6531C3CCC4100DEDDCC /* LoginController.swift in Sources */,
+				FD57D6631C3CCD8900DEDDCC /* BroadcastController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDFFEA8E1C3A03D900130400 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDFFEA971C3A03D900130400 /* ForthTVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDFFEA991C3A03D900130400 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDFFEAA21C3A03D900130400 /* ForthTVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDFFEA941C3A03D900130400 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDFFEA7D1C3A03D900130400 /* ForthTV */;
+			targetProxy = FDFFEA931C3A03D900130400 /* PBXContainerItemProxy */;
+		};
+		FDFFEA9F1C3A03D900130400 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDFFEA7D1C3A03D900130400 /* ForthTV */;
+			targetProxy = FDFFEA9E1C3A03D900130400 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDFFEA851C3A03D900130400 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDFFEA861C3A03D900130400 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDFFEA8A1C3A03D900130400 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDFFEA8B1C3A03D900130400 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDFFEAA41C3A03D900130400 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDFFEAA51C3A03D900130400 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDFFEAA71C3A03D900130400 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ForthTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sugar.sg.ForthTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FDFFEAA81C3A03D900130400 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ForthTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sugar.sg.ForthTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FDFFEAAA1C3A03D900130400 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ForthTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sugar.sg.ForthTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ForthTV.app/ForthTV";
+			};
+			name = Debug;
+		};
+		FDFFEAAB1C3A03D900130400 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ForthTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sugar.sg.ForthTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ForthTV.app/ForthTV";
+			};
+			name = Release;
+		};
+		FDFFEAAD1C3A03D900130400 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ForthTVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sugar.sg.ForthTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ForthTV;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FDFFEAAE1C3A03D900130400 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ForthTVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sugar.sg.ForthTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ForthTV;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDFFEA791C3A03D900130400 /* Build configuration list for PBXProject "ForthTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDFFEAA41C3A03D900130400 /* Debug */,
+				FDFFEAA51C3A03D900130400 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDFFEAA61C3A03D900130400 /* Build configuration list for PBXNativeTarget "ForthTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDFFEAA71C3A03D900130400 /* Debug */,
+				FDFFEAA81C3A03D900130400 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDFFEAA91C3A03D900130400 /* Build configuration list for PBXNativeTarget "ForthTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDFFEAAA1C3A03D900130400 /* Debug */,
+				FDFFEAAB1C3A03D900130400 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDFFEAAC1C3A03D900130400 /* Build configuration list for PBXNativeTarget "ForthTVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDFFEAAD1C3A03D900130400 /* Debug */,
+				FDFFEAAE1C3A03D900130400 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDFFEA761C3A03D900130400 /* Project object */;
+}
