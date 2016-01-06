@@ -19,6 +19,8 @@
 		FD57D66E1C3CCE9800DEDDCC /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D66D1C3CCE9800DEDDCC /* MenuController.swift */; };
 		FD57D6721C3CCF1900DEDDCC /* AppConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D6711C3CCF1900DEDDCC /* AppConfigure.swift */; };
 		FD57D6741C3CCF2D00DEDDCC /* ServiceConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D6731C3CCF2D00DEDDCC /* ServiceConfigure.swift */; };
+		FD57D6781C3CD1BD00DEDDCC /* VideoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D6771C3CD1BD00DEDDCC /* VideoListController.swift */; };
+		FD57D67A1C3CD1E300DEDDCC /* SlideContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D6791C3CD1E300DEDDCC /* SlideContainerController.swift */; };
 		FDFFEA871C3A03D900130400 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDFFEA851C3A03D900130400 /* Main.storyboard */; };
 		FDFFEA891C3A03D900130400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDFFEA881C3A03D900130400 /* Assets.xcassets */; };
 		FDFFEA8C1C3A03D900130400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDFFEA8A1C3A03D900130400 /* LaunchScreen.storyboard */; };
@@ -26,7 +28,6 @@
 		FDFFEAA21C3A03D900130400 /* ForthTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFFEAA11C3A03D900130400 /* ForthTVUITests.swift */; };
 		FDFFEABB1C3A177300130400 /* AccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFFEAB71C3A177300130400 /* AccountController.swift */; };
 		FDFFEABC1C3A177300130400 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFFEAB81C3A177300130400 /* AppDelegate.swift */; };
-		FDFFEABD1C3A177300130400 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFFEAB91C3A177300130400 /* ViewController.swift */; };
 		FDFFEABE1C3A177300130400 /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFFEABA1C3A177300130400 /* WelcomeController.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,8 @@
 		FD57D66D1C3CCE9800DEDDCC /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuController.swift; path = 02.Controllers/MenuController.swift; sourceTree = "<group>"; };
 		FD57D6711C3CCF1900DEDDCC /* AppConfigure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppConfigure.swift; path = 01.Common/AppConfigure.swift; sourceTree = "<group>"; };
 		FD57D6731C3CCF2D00DEDDCC /* ServiceConfigure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceConfigure.swift; path = 01.Common/ServiceConfigure.swift; sourceTree = "<group>"; };
+		FD57D6771C3CD1BD00DEDDCC /* VideoListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoListController.swift; path = 02.Controllers/VideoListController.swift; sourceTree = "<group>"; };
+		FD57D6791C3CD1E300DEDDCC /* SlideContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideContainerController.swift; path = 02.Controllers/SlideContainerController.swift; sourceTree = "<group>"; };
 		FDFFEA7E1C3A03D900130400 /* ForthTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForthTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDFFEA861C3A03D900130400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDFFEA881C3A03D900130400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,7 +76,6 @@
 		FDFFEAA31C3A03D900130400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDFFEAB71C3A177300130400 /* AccountController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountController.swift; path = 02.Controllers/AccountController.swift; sourceTree = "<group>"; };
 		FDFFEAB81C3A177300130400 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = 02.Controllers/AppDelegate.swift; sourceTree = "<group>"; };
-		FDFFEAB91C3A177300130400 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = 02.Controllers/ViewController.swift; sourceTree = "<group>"; };
 		FDFFEABA1C3A177300130400 /* WelcomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeController.swift; path = 02.Controllers/WelcomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,8 +107,9 @@
 		FD57D6501C3CCB2C00DEDDCC /* 00.SlideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				FDFFEAB91C3A177300130400 /* ViewController.swift */,
 				FD57D66D1C3CCE9800DEDDCC /* MenuController.swift */,
+				FD57D6771C3CD1BD00DEDDCC /* VideoListController.swift */,
+				FD57D6791C3CD1E300DEDDCC /* SlideContainerController.swift */,
 			);
 			name = 00.SlideMenu;
 			sourceTree = "<group>";
@@ -390,14 +393,15 @@
 				FD57D66C1C3CCE1200DEDDCC /* VisitterProfileController.swift in Sources */,
 				FD57D65A1C3CCD0600DEDDCC /* ChattingController.swift in Sources */,
 				FD57D6681C3CCDC000DEDDCC /* UserProfileController.swift in Sources */,
+				FD57D67A1C3CD1E300DEDDCC /* SlideContainerController.swift in Sources */,
 				FD57D6741C3CCF2D00DEDDCC /* ServiceConfigure.swift in Sources */,
 				FDFFEABE1C3A177300130400 /* WelcomeController.swift in Sources */,
 				FD57D65C1C3CCD1A00DEDDCC /* ViewersController.swift in Sources */,
 				FD57D6551C3CCC5300DEDDCC /* RegisterController.swift in Sources */,
-				FDFFEABD1C3A177300130400 /* ViewController.swift in Sources */,
 				FD57D66E1C3CCE9800DEDDCC /* MenuController.swift in Sources */,
 				FD57D6581C3CCCEE00DEDDCC /* VideoDetailController.swift in Sources */,
 				FD57D6651C3CCD9900DEDDCC /* RecordController.swift in Sources */,
+				FD57D6781C3CD1BD00DEDDCC /* VideoListController.swift in Sources */,
 				FD57D6721C3CCF1900DEDDCC /* AppConfigure.swift in Sources */,
 				FDFFEABB1C3A177300130400 /* AccountController.swift in Sources */,
 				FD57D6531C3CCC4100DEDDCC /* LoginController.swift in Sources */,
