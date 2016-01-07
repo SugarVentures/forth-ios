@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VideoDetailController: UIViewController {
+class VideoDetailController: BaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

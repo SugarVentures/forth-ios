@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RecordController: UIViewController {
+class RecordController: BaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

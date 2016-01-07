@@ -1,14 +1,14 @@
 //
-//  WelcomeController.swift
+//  BaseController.swift
 //  ForthTV
 //
-//  Created by Hanh Vo on 1/4/16.
+//  Created by Hanh Vo on 1/7/16.
 //  Copyright © 2016 Hanh Vo. All rights reserved.
 //
 
 import UIKit
 
-class WelcomeController: BaseController {
+class BaseController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,8 @@ class WelcomeController: BaseController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func setObject(object:NSObject){}
     
 
     /*

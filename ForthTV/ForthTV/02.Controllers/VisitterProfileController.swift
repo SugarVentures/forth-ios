@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VisitterProfileController: UIViewController {
+class VisitterProfileController: BaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

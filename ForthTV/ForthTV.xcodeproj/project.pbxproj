@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD3F928E1C3E559F00808ECB /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3F928D1C3E559F00808ECB /* BaseController.swift */; };
 		FD57D6531C3CCC4100DEDDCC /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D6521C3CCC4100DEDDCC /* LoginController.swift */; };
 		FD57D6551C3CCC5300DEDDCC /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D6541C3CCC5300DEDDCC /* RegisterController.swift */; };
 		FD57D6581C3CCCEE00DEDDCC /* VideoDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D6571C3CCCEE00DEDDCC /* VideoDetailController.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD3F928D1C3E559F00808ECB /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseController.swift; path = 02.Controllers/BaseController.swift; sourceTree = "<group>"; };
 		FD57D6521C3CCC4100DEDDCC /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginController.swift; path = 02.Controllers/LoginController.swift; sourceTree = "<group>"; };
 		FD57D6541C3CCC5300DEDDCC /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterController.swift; path = 02.Controllers/RegisterController.swift; sourceTree = "<group>"; };
 		FD57D6571C3CCCEE00DEDDCC /* VideoDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoDetailController.swift; path = 02.Controllers/VideoDetailController.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				FDFFEAB81C3A177300130400 /* AppDelegate.swift */,
+				FD3F928D1C3E559F00808ECB /* BaseController.swift */,
 				FD57D67B1C3CD36D00DEDDCC /* MasterController.swift */,
 				FDFFEABA1C3A177300130400 /* WelcomeController.swift */,
 				FD57D6501C3CCB2C00DEDDCC /* 00.SlideMenu */,
@@ -399,6 +402,7 @@
 				FDFFEABE1C3A177300130400 /* WelcomeController.swift in Sources */,
 				FD57D6551C3CCC5300DEDDCC /* RegisterController.swift in Sources */,
 				FD57D66E1C3CCE9800DEDDCC /* MenuController.swift in Sources */,
+				FD3F928E1C3E559F00808ECB /* BaseController.swift in Sources */,
 				FD57D6581C3CCCEE00DEDDCC /* VideoDetailController.swift in Sources */,
 				FD57D6651C3CCD9900DEDDCC /* RecordController.swift in Sources */,
 				FD57D6781C3CD1BD00DEDDCC /* VideoListController.swift in Sources */,

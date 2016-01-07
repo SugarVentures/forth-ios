@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SlideContainerController: UIViewController {
+class SlideContainerController: BaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
