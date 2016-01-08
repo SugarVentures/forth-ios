@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 // StoryBoards
-let MASTER_PAGE_STORYBOARD:String = "MasterController"
 let WELCOME_PAGE_STORYBOARD:String = "WelcomeController"
 let MENU_PAGE_STORYBOARD:String = "MenuController"
 let VIDEO_LIST_STORYBOARD:String = "VideoListController"
