@@ -22,6 +22,11 @@
 		FD57D6781C3CD1BD00DEDDCC /* VideoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D6771C3CD1BD00DEDDCC /* VideoListController.swift */; };
 		FD57D67A1C3CD1E300DEDDCC /* SlideContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D6791C3CD1E300DEDDCC /* SlideContainerController.swift */; };
 		FD57D67C1C3CD36D00DEDDCC /* Master.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D67B1C3CD36D00DEDDCC /* Master.swift */; };
+		FD7286B31C43B3D1007632B6 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7286AF1C43B3D1007632B6 /* String.swift */; };
+		FD7286B41C43B3D1007632B6 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7286B01C43B3D1007632B6 /* UIApplication.swift */; };
+		FD7286B51C43B3D1007632B6 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7286B11C43B3D1007632B6 /* UIColor.swift */; };
+		FD7286B61C43B3D1007632B6 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7286B21C43B3D1007632B6 /* UIViewController.swift */; };
+		FDEA9E591C42509A005E8651 /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEA9E581C42509A005E8651 /* SlideMenuController.swift */; };
 		FDFFEA871C3A03D900130400 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDFFEA851C3A03D900130400 /* Main.storyboard */; };
 		FDFFEA891C3A03D900130400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDFFEA881C3A03D900130400 /* Assets.xcassets */; };
 		FDFFEA8C1C3A03D900130400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDFFEA8A1C3A03D900130400 /* LaunchScreen.storyboard */; };
@@ -29,7 +34,6 @@
 		FDFFEAA21C3A03D900130400 /* ForthTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFFEAA11C3A03D900130400 /* ForthTVUITests.swift */; };
 		FDFFEABB1C3A177300130400 /* AccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFFEAB71C3A177300130400 /* AccountController.swift */; };
 		FDFFEABC1C3A177300130400 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFFEAB81C3A177300130400 /* AppDelegate.swift */; };
-		FDFFEABE1C3A177300130400 /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFFEABA1C3A177300130400 /* WelcomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,11 @@
 		FD57D6771C3CD1BD00DEDDCC /* VideoListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoListController.swift; path = 02.Controllers/VideoListController.swift; sourceTree = "<group>"; };
 		FD57D6791C3CD1E300DEDDCC /* SlideContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideContainerController.swift; path = 02.Controllers/SlideContainerController.swift; sourceTree = "<group>"; };
 		FD57D67B1C3CD36D00DEDDCC /* Master.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Master.swift; path = 01.Common/Master.swift; sourceTree = "<group>"; };
+		FD7286AF1C43B3D1007632B6 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = String.swift; path = 01.Common/String.swift; sourceTree = "<group>"; };
+		FD7286B01C43B3D1007632B6 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIApplication.swift; path = 01.Common/UIApplication.swift; sourceTree = "<group>"; };
+		FD7286B11C43B3D1007632B6 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = 01.Common/UIColor.swift; sourceTree = "<group>"; };
+		FD7286B21C43B3D1007632B6 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = 01.Common/UIViewController.swift; sourceTree = "<group>"; };
+		FDEA9E581C42509A005E8651 /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideMenuController.swift; path = 03.Libs/SlideMenuController.swift; sourceTree = "<group>"; };
 		FDFFEA7E1C3A03D900130400 /* ForthTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForthTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDFFEA861C3A03D900130400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDFFEA881C3A03D900130400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,7 +87,6 @@
 		FDFFEAA31C3A03D900130400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDFFEAB71C3A177300130400 /* AccountController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountController.swift; path = 02.Controllers/AccountController.swift; sourceTree = "<group>"; };
 		FDFFEAB81C3A177300130400 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = 02.Controllers/AppDelegate.swift; sourceTree = "<group>"; };
-		FDFFEABA1C3A177300130400 /* WelcomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeController.swift; path = 02.Controllers/WelcomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +164,10 @@
 		FD57D66F1C3CCECC00DEDDCC /* 00.Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FD7286AF1C43B3D1007632B6 /* String.swift */,
+				FD7286B01C43B3D1007632B6 /* UIApplication.swift */,
+				FD7286B11C43B3D1007632B6 /* UIColor.swift */,
+				FD7286B21C43B3D1007632B6 /* UIViewController.swift */,
 			);
 			name = 00.Extensions;
 			sourceTree = "<group>";
@@ -235,7 +247,6 @@
 				FDFFEAB81C3A177300130400 /* AppDelegate.swift */,
 				FD57D67B1C3CD36D00DEDDCC /* Master.swift */,
 				FD3F928D1C3E559F00808ECB /* BaseController.swift */,
-				FDFFEABA1C3A177300130400 /* WelcomeController.swift */,
 				FD57D6501C3CCB2C00DEDDCC /* 00.SlideMenu */,
 				FD57D6511C3CCC0900DEDDCC /* 01.Account */,
 				FD57D6561C3CCCB500DEDDCC /* 03.VideoDetails */,
@@ -248,6 +259,7 @@
 		FDFFEAB11C3A158600130400 /* 03.Libs */ = {
 			isa = PBXGroup;
 			children = (
+				FDEA9E581C42509A005E8651 /* SlideMenuController.swift */,
 			);
 			name = 03.Libs;
 			sourceTree = "<group>";
@@ -394,17 +406,21 @@
 			files = (
 				FDFFEABC1C3A177300130400 /* AppDelegate.swift in Sources */,
 				FD57D66C1C3CCE1200DEDDCC /* VisitterProfileController.swift in Sources */,
+				FD7286B31C43B3D1007632B6 /* String.swift in Sources */,
 				FD57D65A1C3CCD0600DEDDCC /* ChattingController.swift in Sources */,
 				FD57D67C1C3CD36D00DEDDCC /* Master.swift in Sources */,
 				FD57D6681C3CCDC000DEDDCC /* UserProfileController.swift in Sources */,
+				FD7286B61C43B3D1007632B6 /* UIViewController.swift in Sources */,
 				FD57D67A1C3CD1E300DEDDCC /* SlideContainerController.swift in Sources */,
+				FD7286B51C43B3D1007632B6 /* UIColor.swift in Sources */,
 				FD57D6741C3CCF2D00DEDDCC /* ServiceConfigure.swift in Sources */,
-				FDFFEABE1C3A177300130400 /* WelcomeController.swift in Sources */,
 				FD57D6551C3CCC5300DEDDCC /* RegisterController.swift in Sources */,
 				FD57D66E1C3CCE9800DEDDCC /* MenuController.swift in Sources */,
 				FD3F928E1C3E559F00808ECB /* BaseController.swift in Sources */,
 				FD57D6581C3CCCEE00DEDDCC /* VideoDetailController.swift in Sources */,
+				FDEA9E591C42509A005E8651 /* SlideMenuController.swift in Sources */,
 				FD57D6651C3CCD9900DEDDCC /* RecordController.swift in Sources */,
+				FD7286B41C43B3D1007632B6 /* UIApplication.swift in Sources */,
 				FD57D6781C3CD1BD00DEDDCC /* VideoListController.swift in Sources */,
 				FD57D6721C3CCF1900DEDDCC /* AppConfigure.swift in Sources */,
 				FDFFEABB1C3A177300130400 /* AccountController.swift in Sources */,
@@ -500,7 +516,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -539,7 +555,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

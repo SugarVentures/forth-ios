@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 // StoryBoards
-let WELCOME_PAGE_STORYBOARD:String = "WelcomeController"
+let MAIN_STORYBOARD:String = "Main"
 let MENU_PAGE_STORYBOARD:String = "MenuController"
 let VIDEO_LIST_STORYBOARD:String = "VideoListController"
 let SLIDE_CONTAINER_STORYBOARD:String = "SlideContainerController"
@@ -26,8 +26,15 @@ let VISITTER_PROFILE_STORYBOARD:String = "VisitterProfileController"
 
 
 // Colors
-let THEME_YELLOW_COLOR:UIColor = UIColor(red: 255.0/255.0, green: 180.0/255.0, blue: 0.0, alpha: 1.0)
-let THEME_BLUE_COLOR:UIColor = UIColor(red: 13.0/255.0, green: 44.0/255.0,blue: 84.0/255.0 , alpha: 1.0)
-let THEME_RED_COLOR:UIColor = UIColor(red: 237.0/255.0, green: 31.0/255.0, blue: 36.0/255, alpha: 1.0)
-let THEME_DARK_GRAY:UIColor = UIColor(red: 46.0/255.0, green: 46.0/255.0, blue: 46.0/255.0, alpha: 1.0)
-let THEME_LIGHT_GRAY:UIColor = UIColor(red: 206.0/255.0, green: 206.0/255.0, blue: 206.0/255.0, alpha: 1.0)
+//let THEME_YELLOW_COLOR:UIColor = UIColor(red: 255.0/255.0, green: 180.0/255.0, blue: 0.0, alpha: 1.0)
+//let THEME_BLUE_COLOR:UIColor = UIColor(red: 13.0/255.0, green: 44.0/255.0,blue: 84.0/255.0 , alpha: 1.0)
+//let THEME_RED_COLOR:UIColor = UIColor(red: 237.0/255.0, green: 31.0/255.0, blue: 36.0/255, alpha: 1.0)
+//let THEME_DARK_GRAY:UIColor = UIColor(red: 46.0/255.0, green: 46.0/255.0, blue: 46.0/255.0, alpha: 1.0)
+//let THEME_LIGHT_GRAY:UIColor = UIColor(red: 206.0/255.0, green: 206.0/255.0, blue: 206.0/255.0, alpha: 1.0)
+
+let THEME_YELLOW_COLOR:UIColor = UIColor(hex: "ffb400")
+let THEME_BLUE_COLOR:UIColor = UIColor(hex: "0d2c54")
+let THEME_RED_COLOR:UIColor = UIColor(hex: "ed1f24")
+let THEME_DARK_GRAY:UIColor = UIColor(hex: "2e2e2e")
+let THEME_LIGHT_GRAY:UIColor = UIColor(hex: "cecece")
+

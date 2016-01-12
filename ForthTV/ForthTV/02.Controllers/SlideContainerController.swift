@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SlideContainerController: BaseController {
+class SlideContainerController: SlideMenuController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,16 @@ class SlideContainerController: BaseController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func isTagetViewController() -> Bool {
+        if let vc = UIApplication.topViewController() {
+            if vc is VideoListController            {
+                return true
+            }
+        }
+        return false
+    }
+
     
 
     /*

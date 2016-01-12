@@ -9,7 +9,6 @@
 import UIKit
 
 enum PageType{
-    case WELCOME
     case MENU
     case VIDEO_LIST
     case SLIDE_CONTAINER
@@ -54,9 +53,7 @@ class Master: NSObject {
         var storyboardName:String;
         
         switch (pageType){
-        case .WELCOME:
-            storyboardName = WELCOME_PAGE_STORYBOARD
-            break
+
         case .MENU:
             storyboardName = MENU_PAGE_STORYBOARD
             break
@@ -96,9 +93,19 @@ class Master: NSObject {
             
         }
         
-        let storyboard: UIStoryboard = UIStoryboard(name: storyboardName, bundle: nil)
+        let storyboard: UIStoryboard = UIStoryboard(name: MAIN_STORYBOARD, bundle: nil)
         return  storyboard.instantiateViewControllerWithIdentifier(storyboardName) as! BaseController
         
+    }
+    
+    //MARK: Common Methods
+    func delay(delay:Double, closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
     }
 
 }

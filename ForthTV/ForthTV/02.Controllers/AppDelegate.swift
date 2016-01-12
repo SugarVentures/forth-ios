@@ -12,10 +12,18 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var navigationController: UINavigationController?
+    
+    var videoListController: VideoListController!
+    var menuController: MenuController!
+    var slideController: SlideContainerController!
+    var broadcastController:BroadcastController!
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        self.createMenuView();
         return true
     }
 
@@ -39,6 +47,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    
+    private func createMenuView() {
+        
+        // center
+        videoListController = Master.sharedInstance.getController(PageType.VIDEO_LIST) as! VideoListController;
+        
+        // main
+        navigationController = UINavigationController(rootViewController: videoListController)
+        navigationController?.navigationBar.barTintColor = THEME_BLUE_COLOR
+        navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        menuController.mainViewController = navigationController
+        
+        // left
+        menuController = Master.sharedInstance.getController(PageType.MENU) as! MenuController
+        
+        // right
+        broadcastController = Master.sharedInstance.getController(PageType.BROADCAST) as! BroadcastController
+        
+        // slider menu
+        slideController =  SlideContainerController(mainViewController: navigationController!, leftMenuViewController: menuController, rightMenuViewController: broadcastController)
+        slideController.automaticallyAdjustsScrollViewInsets = true
+        
+        // window
+        self.window?.backgroundColor = UIColor(red: 236.0, green: 238.0, blue: 241.0, alpha: 1.0)
+        self.window?.rootViewController = slideController
+        self.window?.makeKeyAndVisible()
     }
 
 

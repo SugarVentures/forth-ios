@@ -9,6 +9,8 @@
 import UIKit
 
 class MenuController: BaseController {
+    
+     var mainViewController: UIViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
