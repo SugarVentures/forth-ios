@@ -26,6 +26,11 @@
 		FD7286B41C43B3D1007632B6 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7286B01C43B3D1007632B6 /* UIApplication.swift */; };
 		FD7286B51C43B3D1007632B6 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7286B11C43B3D1007632B6 /* UIColor.swift */; };
 		FD7286B61C43B3D1007632B6 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7286B21C43B3D1007632B6 /* UIViewController.swift */; };
+		FDCC5B5A1C44AE1A005BFD5F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC5B591C44AE1A005BFD5F /* MenuCell.swift */; };
+		FDCC5B5C1C44AE61005BFD5F /* MenuHeaderLogined.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC5B5B1C44AE61005BFD5F /* MenuHeaderLogined.swift */; };
+		FDCC5B5E1C44AF99005BFD5F /* MenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC5B5D1C44AF99005BFD5F /* MenuHeader.swift */; };
+		FDCC5B601C44AFFC005BFD5F /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCC5B5F1C44AFFC005BFD5F /* MenuCell.xib */; };
+		FDCC5B631C44B51B005BFD5F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC5B621C44B51B005BFD5F /* UIView.swift */; };
 		FDEA9E591C42509A005E8651 /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEA9E581C42509A005E8651 /* SlideMenuController.swift */; };
 		FDFFEA871C3A03D900130400 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDFFEA851C3A03D900130400 /* Main.storyboard */; };
 		FDFFEA891C3A03D900130400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDFFEA881C3A03D900130400 /* Assets.xcassets */; };
@@ -73,6 +78,11 @@
 		FD7286B01C43B3D1007632B6 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIApplication.swift; path = 01.Common/UIApplication.swift; sourceTree = "<group>"; };
 		FD7286B11C43B3D1007632B6 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = 01.Common/UIColor.swift; sourceTree = "<group>"; };
 		FD7286B21C43B3D1007632B6 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = 01.Common/UIViewController.swift; sourceTree = "<group>"; };
+		FDCC5B591C44AE1A005BFD5F /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuCell.swift; path = 02.Controllers/MenuCell.swift; sourceTree = "<group>"; };
+		FDCC5B5B1C44AE61005BFD5F /* MenuHeaderLogined.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuHeaderLogined.swift; path = 02.Controllers/MenuHeaderLogined.swift; sourceTree = "<group>"; };
+		FDCC5B5D1C44AF99005BFD5F /* MenuHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuHeader.swift; path = 02.Controllers/MenuHeader.swift; sourceTree = "<group>"; };
+		FDCC5B5F1C44AFFC005BFD5F /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuCell.xib; path = 02.Controllers/MenuCell.xib; sourceTree = "<group>"; };
+		FDCC5B621C44B51B005BFD5F /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = 01.Common/UIView.swift; sourceTree = "<group>"; };
 		FDEA9E581C42509A005E8651 /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideMenuController.swift; path = 03.Libs/SlideMenuController.swift; sourceTree = "<group>"; };
 		FDFFEA7E1C3A03D900130400 /* ForthTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForthTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDFFEA861C3A03D900130400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -117,7 +127,7 @@
 		FD57D6501C3CCB2C00DEDDCC /* 00.SlideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				FD57D66D1C3CCE9800DEDDCC /* MenuController.swift */,
+				FDCC5B581C44ADBD005BFD5F /* 00.MenuController */,
 				FD57D6771C3CD1BD00DEDDCC /* VideoListController.swift */,
 				FD57D6791C3CD1E300DEDDCC /* SlideContainerController.swift */,
 			);
@@ -168,6 +178,7 @@
 				FD7286B01C43B3D1007632B6 /* UIApplication.swift */,
 				FD7286B11C43B3D1007632B6 /* UIColor.swift */,
 				FD7286B21C43B3D1007632B6 /* UIViewController.swift */,
+				FDCC5B621C44B51B005BFD5F /* UIView.swift */,
 			);
 			name = 00.Extensions;
 			sourceTree = "<group>";
@@ -179,6 +190,26 @@
 				FD57D6731C3CCF2D00DEDDCC /* ServiceConfigure.swift */,
 			);
 			name = 01.App;
+			sourceTree = "<group>";
+		};
+		FDCC5B581C44ADBD005BFD5F /* 00.MenuController */ = {
+			isa = PBXGroup;
+			children = (
+				FD57D66D1C3CCE9800DEDDCC /* MenuController.swift */,
+				FDCC5B611C44B12E005BFD5F /* MenuCell */,
+				FDCC5B5B1C44AE61005BFD5F /* MenuHeaderLogined.swift */,
+				FDCC5B5D1C44AF99005BFD5F /* MenuHeader.swift */,
+			);
+			name = 00.MenuController;
+			sourceTree = "<group>";
+		};
+		FDCC5B611C44B12E005BFD5F /* MenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				FDCC5B591C44AE1A005BFD5F /* MenuCell.swift */,
+				FDCC5B5F1C44AFFC005BFD5F /* MenuCell.xib */,
+			);
+			name = MenuCell;
 			sourceTree = "<group>";
 		};
 		FDFFEA751C3A03D900130400 = {
@@ -379,6 +410,7 @@
 			files = (
 				FDFFEA8C1C3A03D900130400 /* LaunchScreen.storyboard in Resources */,
 				FDFFEA891C3A03D900130400 /* Assets.xcassets in Resources */,
+				FDCC5B601C44AFFC005BFD5F /* MenuCell.xib in Resources */,
 				FDFFEA871C3A03D900130400 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,11 +438,14 @@
 			files = (
 				FDFFEABC1C3A177300130400 /* AppDelegate.swift in Sources */,
 				FD57D66C1C3CCE1200DEDDCC /* VisitterProfileController.swift in Sources */,
+				FDCC5B5C1C44AE61005BFD5F /* MenuHeaderLogined.swift in Sources */,
+				FDCC5B5E1C44AF99005BFD5F /* MenuHeader.swift in Sources */,
 				FD7286B31C43B3D1007632B6 /* String.swift in Sources */,
 				FD57D65A1C3CCD0600DEDDCC /* ChattingController.swift in Sources */,
 				FD57D67C1C3CD36D00DEDDCC /* Master.swift in Sources */,
 				FD57D6681C3CCDC000DEDDCC /* UserProfileController.swift in Sources */,
 				FD7286B61C43B3D1007632B6 /* UIViewController.swift in Sources */,
+				FDCC5B5A1C44AE1A005BFD5F /* MenuCell.swift in Sources */,
 				FD57D67A1C3CD1E300DEDDCC /* SlideContainerController.swift in Sources */,
 				FD7286B51C43B3D1007632B6 /* UIColor.swift in Sources */,
 				FD57D6741C3CCF2D00DEDDCC /* ServiceConfigure.swift in Sources */,
@@ -420,6 +455,7 @@
 				FD57D6581C3CCCEE00DEDDCC /* VideoDetailController.swift in Sources */,
 				FDEA9E591C42509A005E8651 /* SlideMenuController.swift in Sources */,
 				FD57D6651C3CCD9900DEDDCC /* RecordController.swift in Sources */,
+				FDCC5B631C44B51B005BFD5F /* UIView.swift in Sources */,
 				FD7286B41C43B3D1007632B6 /* UIApplication.swift in Sources */,
 				FD57D6781C3CD1BD00DEDDCC /* VideoListController.swift in Sources */,
 				FD57D6721C3CCF1900DEDDCC /* AppConfigure.swift in Sources */,

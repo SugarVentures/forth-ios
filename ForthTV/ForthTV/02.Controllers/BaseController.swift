@@ -13,8 +13,6 @@ public class BaseController: UIViewController {
     // MARK: Life Cycle
     public override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
     }
     
     public override func didReceiveMemoryWarning() {
@@ -27,11 +25,6 @@ public class BaseController: UIViewController {
     }
     
     // MARK: Method
-    func configureForBeginning(){
-        
-        // Make light style for status bar
-        self.setNeedsStatusBarAppearanceUpdate()
-    }
     
     public func setObject(object:NSObject){}
 }
