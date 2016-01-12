@@ -17,9 +17,6 @@ public struct SlideMenuOptions {
     public static var shadowOffset: CGSize = CGSizeMake(0,0)
     public static var panFromBezel: Bool = true
     public static var animationDuration: CGFloat = 0.4
-    public static var rightViewWidth: CGFloat = 270.0
-    public static var rightBezelWidth: CGFloat? = 16.0
-    public static var rightPanFromBezel: Bool = true
     public static var hideStatusBar: Bool = true
     public static var pointOfNoReturnWidth: CGFloat = 44.0
     public static var simultaneousGestureRecognizers: Bool = true
@@ -50,13 +47,11 @@ public class SlideMenuController: BaseController, UIGestureRecognizerDelegate {
     public var opacityView = UIView()
     public var mainContainerView = UIView()
     public var leftContainerView = UIView()
-    public var rightContainerView =  UIView()
     public var mainViewController: UIViewController?
     public var leftViewController: UIViewController?
     public var leftPanGesture: UIPanGestureRecognizer?
     public var leftTapGesture: UITapGestureRecognizer?
     public var rightViewController: UIViewController?
-    public var rightPanGesture: UIPanGestureRecognizer?
     public var rightTapGesture: UITapGestureRecognizer?
     
     public required init?(coder aDecoder: NSCoder) {
@@ -122,41 +117,22 @@ public class SlideMenuController: BaseController, UIGestureRecognizerDelegate {
         leftContainerView.autoresizingMask = UIViewAutoresizing.FlexibleHeight
         view.insertSubview(leftContainerView, atIndex: 2)
         
-        var rightFrame: CGRect = view.bounds
-        rightFrame.size.width = SlideMenuOptions.rightViewWidth
-        rightFrame.origin.x = rightMinOrigin()
-        let rightOffset: CGFloat = 0
-        rightFrame.origin.y = rightFrame.origin.y + rightOffset;
-        rightFrame.size.height = rightFrame.size.height - rightOffset
-        rightContainerView = UIView(frame: rightFrame)
-        rightContainerView.backgroundColor = UIColor.clearColor()
-        rightContainerView.autoresizingMask = UIViewAutoresizing.FlexibleHeight
-        view.insertSubview(rightContainerView, atIndex: 3)
-        
         addLeftGestures()
-        addRightGestures()
+
     }
   
     public override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
         mainContainerView.transform = CGAffineTransformMakeScale(1.0, 1.0)
         leftContainerView.hidden = true
-        rightContainerView.hidden = true
       
         coordinator.animateAlongsideTransition(nil, completion: { (context: UIViewControllerTransitionCoordinatorContext!) -> Void in
             self.closeLeftNonAnimation()
-            self.closeRightNonAnimation()
             self.leftContainerView.hidden = false
-            self.rightContainerView.hidden = false
-      
+         
             if self.leftPanGesture != nil && self.leftPanGesture != nil {
                 self.removeLeftGestures()
                 self.addLeftGestures()
-            }
-            
-            if self.rightPanGesture != nil && self.rightPanGesture != nil {
-                self.removeRightGestures()
-                self.addRightGestures()
             }
         })
     }
@@ -174,16 +150,12 @@ public class SlideMenuController: BaseController, UIGestureRecognizerDelegate {
     }
     
     public override func viewWillLayoutSubviews() {
-        // topLayoutGuideの値が確定するこのタイミングで各種ViewControllerをセットする
         setUpViewController(mainContainerView, targetViewController: mainViewController)
         setUpViewController(leftContainerView, targetViewController: leftViewController)
-        setUpViewController(rightContainerView, targetViewController: rightViewController)
     }
     
     public override func openLeft() {
         setOpenWindowLevel()
-        
-        //leftViewControllerのviewWillAppearを呼ぶため
         leftViewController?.beginAppearanceTransition(isLeftHidden(), animated: true)
         openLeftWithVelocity(0.0)
         
@@ -191,11 +163,9 @@ public class SlideMenuController: BaseController, UIGestureRecognizerDelegate {
     }
     
     public override func openRight() {
-        setOpenWindowLevel()
         
-        //menuViewControllerのviewWillAppearを呼ぶため
-        rightViewController?.beginAppearanceTransition(isRightHidden(), animated: true)
-        openRightWithVelocity(0.0)
+        let navigationController:UINavigationController =  self.mainViewController as! UINavigationController
+        navigationController.pushViewController(rightViewController!, animated: true)
     }
     
     public override func closeLeft() {
@@ -203,13 +173,6 @@ public class SlideMenuController: BaseController, UIGestureRecognizerDelegate {
         closeLeftWithVelocity(0.0)
         setCloseWindowLebel()
     }
-    
-    public override func closeRight() {
-        rightViewController?.beginAppearanceTransition(isRightHidden(), animated: true)
-        closeRightWithVelocity(0.0)
-        setCloseWindowLebel()
-    }
-    
     
     public func addLeftGestures() {
     
@@ -228,23 +191,6 @@ public class SlideMenuController: BaseController, UIGestureRecognizerDelegate {
         }
     }
     
-    public func addRightGestures() {
-        
-        if (rightViewController != nil) {
-            if rightPanGesture == nil {
-                rightPanGesture = UIPanGestureRecognizer(target: self, action: "handleRightPanGesture:")
-                rightPanGesture!.delegate = self
-                view.addGestureRecognizer(rightPanGesture!)
-            }
-            
-            if rightTapGesture == nil {
-                rightTapGesture = UITapGestureRecognizer(target: self, action: "toggleRight")
-                rightTapGesture!.delegate = self
-                view.addGestureRecognizer(rightTapGesture!)
-            }
-        }
-    }
-    
     public func removeLeftGestures() {
         
         if leftPanGesture != nil {
@@ -255,19 +201,6 @@ public class SlideMenuController: BaseController, UIGestureRecognizerDelegate {
         if leftTapGesture != nil {
             view.removeGestureRecognizer(leftTapGesture!)
             leftTapGesture = nil
-        }
-    }
-    
-    public func removeRightGestures() {
-        
-        if rightPanGesture != nil {
-            view.removeGestureRecognizer(rightPanGesture!)
-            rightPanGesture = nil
-        }
-        
-        if rightTapGesture != nil {
-            view.removeGestureRecognizer(rightTapGesture!)
-            rightTapGesture = nil
         }
     }
     
@@ -294,11 +227,6 @@ public class SlideMenuController: BaseController, UIGestureRecognizerDelegate {
         if !isTagetViewController() {
             return
         }
-        
-        if isRightOpen() {
-            return
-        }
-        
         switch panGesture.state {
             case UIGestureRecognizerState.Began:
                 
@@ -344,63 +272,6 @@ public class SlideMenuController: BaseController, UIGestureRecognizerDelegate {
         
     }
     
-    struct RightPanState {
-        static var frameAtStartOfPan: CGRect = CGRectZero
-        static var startPointOfPan: CGPoint = CGPointZero
-        static var wasOpenAtStartOfPan: Bool = false
-        static var wasHiddenAtStartOfPan: Bool = false
-    }
-    
-    func handleRightPanGesture(panGesture: UIPanGestureRecognizer) {
-        
-        if !isTagetViewController() {
-            return
-        }
-        
-        if isLeftOpen() {
-            return
-        }
-        
-        switch panGesture.state {
-        case UIGestureRecognizerState.Began:
-            
-            RightPanState.frameAtStartOfPan = rightContainerView.frame
-            RightPanState.startPointOfPan = panGesture.locationInView(view)
-            RightPanState.wasOpenAtStartOfPan =  isRightOpen()
-            RightPanState.wasHiddenAtStartOfPan = isRightHidden()
-            
-            rightViewController?.beginAppearanceTransition(RightPanState.wasHiddenAtStartOfPan, animated: true)
-            addShadowToView(rightContainerView)
-            setOpenWindowLevel()
-        case UIGestureRecognizerState.Changed:
-            
-            let translation: CGPoint = panGesture.translationInView(panGesture.view!)
-            rightContainerView.frame = applyRightTranslation(translation, toFrame: RightPanState.frameAtStartOfPan)
-            applyRightOpacity()
-            applyRightContentViewScale()
-            
-        case UIGestureRecognizerState.Ended:
-            
-            let velocity: CGPoint = panGesture.velocityInView(panGesture.view)
-            let panInfo: PanInfo = panRightResultInfoForVelocity(velocity)
-            
-            if panInfo.action == .Open {
-                if !RightPanState.wasHiddenAtStartOfPan {
-                    rightViewController?.beginAppearanceTransition(true, animated: true)
-                }
-                openRightWithVelocity(panInfo.velocity)
-            } else {
-                if RightPanState.wasHiddenAtStartOfPan {
-                    rightViewController?.beginAppearanceTransition(false, animated: true)
-                }
-                closeRightWithVelocity(panInfo.velocity)
-                setCloseWindowLebel()
-            }
-        default:
-            break
-        }
-    }
-    
     public func openLeftWithVelocity(velocity: CGFloat) {
         let xOrigin: CGFloat = leftContainerView.frame.origin.x
         let finalXOrigin: CGFloat = 0.0
@@ -426,37 +297,6 @@ public class SlideMenuController: BaseController, UIGestureRecognizerDelegate {
                 if let strongSelf = self {
                     strongSelf.disableContentInteraction()
                     strongSelf.leftViewController?.endAppearanceTransition()
-                }
-        }
-    }
-    
-    public func openRightWithVelocity(velocity: CGFloat) {
-        let xOrigin: CGFloat = rightContainerView.frame.origin.x
-    
-        //	CGFloat finalXOrigin = SlideMenuOptions.rightViewOverlapWidth;
-        let finalXOrigin: CGFloat = CGRectGetWidth(view.bounds) - rightContainerView.frame.size.width
-        
-        var frame = rightContainerView.frame
-        frame.origin.x = finalXOrigin
-    
-        var duration: NSTimeInterval = Double(SlideMenuOptions.animationDuration)
-        if velocity != 0.0 {
-            duration = Double(fabs(xOrigin - CGRectGetWidth(view.bounds)) / velocity)
-            duration = Double(fmax(0.1, fmin(1.0, duration)))
-        }
-    
-        addShadowToView(rightContainerView)
-    
-        UIView.animateWithDuration(duration, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { [weak self]() -> Void in
-            if let strongSelf = self {
-                strongSelf.rightContainerView.frame = frame
-                strongSelf.opacityView.layer.opacity = Float(SlideMenuOptions.contentViewOpacity)
-                strongSelf.mainContainerView.transform = CGAffineTransformMakeScale(SlideMenuOptions.contentViewScale, SlideMenuOptions.contentViewScale)
-            }
-            }) { [weak self](Bool) -> Void in
-                if let strongSelf = self {
-                    strongSelf.disableContentInteraction()
-                    strongSelf.rightViewController?.endAppearanceTransition()
                 }
         }
     }
@@ -490,37 +330,6 @@ public class SlideMenuController: BaseController, UIGestureRecognizerDelegate {
         }
     }
     
-    
-    public func closeRightWithVelocity(velocity: CGFloat) {
-    
-        let xOrigin: CGFloat = rightContainerView.frame.origin.x
-        let finalXOrigin: CGFloat = CGRectGetWidth(view.bounds)
-    
-        var frame: CGRect = rightContainerView.frame
-        frame.origin.x = finalXOrigin
-    
-        var duration: NSTimeInterval = Double(SlideMenuOptions.animationDuration)
-        if velocity != 0.0 {
-            duration = Double(fabs(xOrigin - CGRectGetWidth(view.bounds)) / velocity)
-            duration = Double(fmax(0.1, fmin(1.0, duration)))
-        }
-    
-        UIView.animateWithDuration(duration, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { [weak self]() -> Void in
-            if let strongSelf = self {
-                strongSelf.rightContainerView.frame = frame
-                strongSelf.opacityView.layer.opacity = 0.0
-                strongSelf.mainContainerView.transform = CGAffineTransformMakeScale(1.0, 1.0)
-            }
-            }) { [weak self](Bool) -> Void in
-                if let strongSelf = self {
-                    strongSelf.removeShadow(strongSelf.rightContainerView)
-                    strongSelf.enableContentInteraction()
-                    strongSelf.rightViewController?.endAppearanceTransition()
-                }
-        }
-    }
-    
-    
     public override func toggleLeft() {
         if isLeftOpen() {
             closeLeft()
@@ -542,20 +351,8 @@ public class SlideMenuController: BaseController, UIGestureRecognizerDelegate {
     }
     
     public override func toggleRight() {
-        if isRightOpen() {
-            closeRight()
-            setCloseWindowLebel()
-        } else {
+     
             openRight()
-        }
-    }
-    
-    public func isRightOpen() -> Bool {
-        return rightContainerView.frame.origin.x == CGRectGetWidth(view.bounds) - rightContainerView.frame.size.width
-    }
-    
-    public func isRightHidden() -> Bool {
-        return rightContainerView.frame.origin.x >= CGRectGetWidth(view.bounds)
     }
     
     public func changeMainViewController(mainViewController: UIViewController,  close: Bool) {
@@ -581,17 +378,6 @@ public class SlideMenuController: BaseController, UIGestureRecognizerDelegate {
         leftContainerView.frame = leftFrame;
     }
     
-    public func changeRightViewWidth(width: CGFloat) {
-        
-        SlideMenuOptions.rightBezelWidth = width;
-        var rightFrame: CGRect = view.bounds
-        rightFrame.size.width = width
-        rightFrame.origin.x = rightMinOrigin()
-        let rightOffset: CGFloat = 0
-        rightFrame.origin.y = rightFrame.origin.y + rightOffset;
-        rightFrame.size.height = rightFrame.size.height - rightOffset
-        rightContainerView.frame = rightFrame;
-    }
     
     public func changeLeftViewController(leftViewController: UIViewController, closeLeft:Bool) {
         
@@ -603,14 +389,6 @@ public class SlideMenuController: BaseController, UIGestureRecognizerDelegate {
         }
     }
     
-    public func changeRightViewController(rightViewController: UIViewController, closeRight:Bool) {
-        removeViewController(self.rightViewController)
-        self.rightViewController = rightViewController;
-        setUpViewController(rightContainerView, targetViewController: rightViewController)
-        if closeRight {
-            self.closeRight()
-        }
-    }
     
     private func leftMinOrigin() -> CGFloat {
         return  -SlideMenuOptions.leftViewWidth
@@ -642,27 +420,6 @@ public class SlideMenuController: BaseController, UIGestureRecognizerDelegate {
         return panInfo
     }
     
-    private func panRightResultInfoForVelocity(velocity: CGPoint) -> PanInfo {
-        
-        let thresholdVelocity: CGFloat = -1000.0
-        let pointOfNoReturn: CGFloat = CGFloat(floor(CGRectGetWidth(view.bounds)) - SlideMenuOptions.pointOfNoReturnWidth)
-        let rightOrigin: CGFloat = rightContainerView.frame.origin.x
-        
-        var panInfo: PanInfo = PanInfo(action: .Close, shouldBounce: false, velocity: 0.0)
-        
-        panInfo.action = rightOrigin >= pointOfNoReturn ? .Close : .Open
-        
-        if velocity.x <= thresholdVelocity {
-            panInfo.action = .Open
-            panInfo.velocity = velocity.x
-        } else if (velocity.x >= (-1.0 * thresholdVelocity)) {
-            panInfo.action = .Close
-            panInfo.velocity = velocity.x
-        }
-        
-        return panInfo
-    }
-    
     private func applyLeftTranslation(translation: CGPoint, toFrame:CGRect) -> CGRect {
         
         var newOrigin: CGFloat = toFrame.origin.x
@@ -682,24 +439,6 @@ public class SlideMenuController: BaseController, UIGestureRecognizerDelegate {
         return newFrame
     }
     
-    private func applyRightTranslation(translation: CGPoint, toFrame: CGRect) -> CGRect {
-        
-        var  newOrigin: CGFloat = toFrame.origin.x
-        newOrigin += translation.x
-        
-        let minOrigin: CGFloat = rightMinOrigin()
-        let maxOrigin: CGFloat = rightMinOrigin() - rightContainerView.frame.size.width
-        var newFrame: CGRect = toFrame
-        
-        if newOrigin > minOrigin {
-            newOrigin = minOrigin
-        } else if newOrigin < maxOrigin {
-            newOrigin = maxOrigin
-        }
-        
-        newFrame.origin.x = newOrigin
-        return newFrame
-    }
     
     private func getOpenedLeftRatio() -> CGFloat {
         
@@ -708,12 +447,6 @@ public class SlideMenuController: BaseController, UIGestureRecognizerDelegate {
         return currentPosition / width
     }
     
-    private func getOpenedRightRatio() -> CGFloat {
-        
-        let width: CGFloat = rightContainerView.frame.size.width
-        let currentPosition: CGFloat = rightContainerView.frame.origin.x
-        return -(currentPosition - CGRectGetWidth(view.bounds)) / width
-    }
     
     private func applyLeftOpacity() {
         
@@ -723,21 +456,9 @@ public class SlideMenuController: BaseController, UIGestureRecognizerDelegate {
     }
     
     
-    private func applyRightOpacity() {
-        let openedRightRatio: CGFloat = getOpenedRightRatio()
-        let opacity: CGFloat = SlideMenuOptions.contentViewOpacity * openedRightRatio
-        opacityView.layer.opacity = Float(opacity)
-    }
-    
     private func applyLeftContentViewScale() {
         let openedLeftRatio: CGFloat = getOpenedLeftRatio()
         let scale: CGFloat = 1.0 - ((1.0 - SlideMenuOptions.contentViewScale) * openedLeftRatio);
-        mainContainerView.transform = CGAffineTransformMakeScale(scale, scale)
-    }
-    
-    private func applyRightContentViewScale() {
-        let openedRightRatio: CGFloat = getOpenedRightRatio()
-        let scale: CGFloat = 1.0 - ((1.0 - SlideMenuOptions.contentViewScale) * openedRightRatio)
         mainContainerView.transform = CGAffineTransformMakeScale(scale, scale)
     }
     
@@ -822,17 +543,6 @@ public class SlideMenuController: BaseController, UIGestureRecognizerDelegate {
         enableContentInteraction()
     }
     
-    public func closeRightNonAnimation(){
-        setCloseWindowLebel()
-        let finalXOrigin: CGFloat = CGRectGetWidth(view.bounds)
-        var frame: CGRect = rightContainerView.frame
-        frame.origin.x = finalXOrigin
-        rightContainerView.frame = frame
-        opacityView.layer.opacity = 0.0
-        mainContainerView.transform = CGAffineTransformMakeScale(1.0, 1.0)
-        removeShadow(rightContainerView)
-        enableContentInteraction()
-    }
     
     // MARK: UIGestureRecognizerDelegate
     public func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
@@ -841,12 +551,8 @@ public class SlideMenuController: BaseController, UIGestureRecognizerDelegate {
         
         if gestureRecognizer == leftPanGesture {
             return slideLeftForGestureRecognizer(gestureRecognizer, point: point)
-        } else if gestureRecognizer == rightPanGesture {
-            return slideRightViewForGestureRecognizer(gestureRecognizer, withTouchPoint: point)
-        } else if gestureRecognizer == leftTapGesture {
+        }else if gestureRecognizer == leftTapGesture {
             return isLeftOpen() && !isPointContainedWithinLeftRect(point)
-        } else if gestureRecognizer == rightTapGesture {
-            return isRightOpen() && !isPointContainedWithinRightRect(point)
         }
         
         return true
@@ -875,30 +581,6 @@ public class SlideMenuController: BaseController, UIGestureRecognizerDelegate {
     
     private func isPointContainedWithinLeftRect(point: CGPoint) -> Bool {
         return CGRectContainsPoint(leftContainerView.frame, point)
-    }
-    
-    
-    
-    private func slideRightViewForGestureRecognizer(gesture: UIGestureRecognizer, withTouchPoint point: CGPoint) -> Bool {
-        return isRightOpen() || SlideMenuOptions.rightPanFromBezel && isRightPointContainedWithinBezelRect(point)
-    }
-    
-    private func isRightPointContainedWithinBezelRect(point: CGPoint) -> Bool {
-        if let rightBezelWidth = SlideMenuOptions.rightBezelWidth {
-            var rightBezelRect: CGRect = CGRectZero
-            var tempRect: CGRect = CGRectZero
-            let bezelWidth: CGFloat = CGRectGetWidth(view.bounds) - rightBezelWidth
-        
-            CGRectDivide(view.bounds, &tempRect, &rightBezelRect, bezelWidth, CGRectEdge.MinXEdge)
-        
-            return CGRectContainsPoint(rightBezelRect, point)
-        } else {
-            return true
-        }
-    }
-    
-    private func isPointContainedWithinRightRect(point: CGPoint) -> Bool {
-        return CGRectContainsPoint(rightContainerView.frame, point)
     }
     
 }
