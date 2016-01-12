@@ -55,17 +55,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // center
         videoListController = Master.sharedInstance.getController(PageType.VIDEO_LIST) as! VideoListController;
         
-        // main
-        navigationController = UINavigationController(rootViewController: videoListController)
-        navigationController?.navigationBar.barTintColor = THEME_BLUE_COLOR
-        navigationController?.navigationBar.tintColor = UIColor.whiteColor()
-        menuController.mainViewController = navigationController
-        
         // left
         menuController = Master.sharedInstance.getController(PageType.MENU) as! MenuController
         
         // right
         broadcastController = Master.sharedInstance.getController(PageType.BROADCAST) as! BroadcastController
+
+        // main
+        navigationController = UINavigationController(rootViewController: videoListController)
+        navigationController?.navigationBar.barTintColor = THEME_BLUE_COLOR
+        navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        menuController.mainViewController = navigationController
         
         // slider menu
         slideController =  SlideContainerController(mainViewController: navigationController!, leftMenuViewController: menuController, rightMenuViewController: broadcastController)
