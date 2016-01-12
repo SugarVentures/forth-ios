@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MenuHeaderLogined" customModule="ForthTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="62"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_username" translatesAutoresizingMaskIntoConstraints="NO" id="0mG-o7-pcL">
+                    <rect key="frame" x="0.0" y="1" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="8gD-79-UrJ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hanh Vo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAh-eS-KqO">
+                    <rect key="frame" x="100" y="10" width="400" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O45-py-2Y3" userLabel="Line1">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awq-Bo-vEW" userLabel="Line2">
+                    <rect key="frame" x="0.0" y="61" width="600" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next_icon" translatesAutoresizingMaskIntoConstraints="NO" id="r0x-G9-85p">
+                    <rect key="frame" x="540" y="0.0" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="ojh-qc-tC6"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <accessibility key="accessibilityConfiguration" identifier="MenuHeaderLogined"/>
+            <constraints>
+                <constraint firstItem="r0x-G9-85p" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4RF-NW-2bU"/>
+                <constraint firstItem="0mG-o7-pcL" firstAttribute="top" secondItem="O45-py-2Y3" secondAttribute="bottom" id="69C-9B-PPZ"/>
+                <constraint firstItem="nAh-eS-KqO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="71j-bb-KU2"/>
+                <constraint firstItem="nAh-eS-KqO" firstAttribute="leading" secondItem="0mG-o7-pcL" secondAttribute="trailing" constant="40" id="AeL-1T-Bct"/>
+                <constraint firstAttribute="bottom" secondItem="r0x-G9-85p" secondAttribute="bottom" constant="2" id="Cgd-7O-F0D"/>
+                <constraint firstItem="O45-py-2Y3" firstAttribute="trailing" secondItem="r0x-G9-85p" secondAttribute="trailing" id="GZg-Im-y3z"/>
+                <constraint firstItem="awq-Bo-vEW" firstAttribute="trailing" secondItem="O45-py-2Y3" secondAttribute="trailing" id="Ght-Ho-lgl"/>
+                <constraint firstAttribute="bottom" secondItem="0mG-o7-pcL" secondAttribute="bottom" constant="1" id="H3S-3E-QFa"/>
+                <constraint firstAttribute="bottom" secondItem="awq-Bo-vEW" secondAttribute="bottom" id="MF4-f7-pML"/>
+                <constraint firstItem="awq-Bo-vEW" firstAttribute="top" secondItem="0mG-o7-pcL" secondAttribute="bottom" id="NKe-GN-Prt"/>
+                <constraint firstAttribute="trailing" secondItem="r0x-G9-85p" secondAttribute="trailing" id="P7A-bJ-hrB"/>
+                <constraint firstItem="r0x-G9-85p" firstAttribute="leading" secondItem="nAh-eS-KqO" secondAttribute="trailing" constant="40" id="PTm-V0-lyS"/>
+                <constraint firstItem="awq-Bo-vEW" firstAttribute="leading" secondItem="0mG-o7-pcL" secondAttribute="leading" id="T35-mp-zxb"/>
+                <constraint firstItem="O45-py-2Y3" firstAttribute="leading" secondItem="0mG-o7-pcL" secondAttribute="leading" id="YTK-yv-ndX"/>
+                <constraint firstItem="0mG-o7-pcL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="i3h-qk-wL8"/>
+                <constraint firstItem="0mG-o7-pcL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rzM-if-Ewa"/>
+                <constraint firstAttribute="bottom" secondItem="nAh-eS-KqO" secondAttribute="bottom" constant="12" id="ufP-o1-CeO"/>
+                <constraint firstItem="O45-py-2Y3" firstAttribute="top" secondItem="r0x-G9-85p" secondAttribute="top" id="yxY-83-Gmr"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgAvatar" destination="0mG-o7-pcL" id="Bdg-ZG-LHv"/>
+                <outlet property="userName" destination="nAh-eS-KqO" id="nG7-OS-n6P"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_username" width="30" height="30"/>
+        <image name="next_icon" width="30" height="30"/>
+    </resources>
+</document>

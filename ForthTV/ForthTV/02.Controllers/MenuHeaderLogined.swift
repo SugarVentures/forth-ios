@@ -10,4 +10,15 @@ import UIKit
 
 class MenuHeaderLogined: UITableViewHeaderFooterView {
 
+    // MARK: UI
+    @IBOutlet weak var imgAvatar: UIImageView!
+    @IBOutlet weak var userName: UILabel!
+    
+    // MARK : Methods
+    func createHeaderUI(){
+        
+        // for imgAvatar
+        imgAvatar.layer.cornerRadius = 0.5 * imgAvatar.bounds.size.width
+    }
+    
 }

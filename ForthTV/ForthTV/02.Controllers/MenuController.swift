@@ -50,15 +50,20 @@ class MenuController: BaseController, UITableViewDelegate, UITableViewDataSource
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        // create menu
-        let cell : MenuCell = UIView.fromNib()
-        cell.createStyle()
-        cell.setTextContent(MENU_ARRAY[indexPath.row])
+        let cellID = "MenuCell"
+        var cell : MenuCell? = tableView .dequeueReusableCellWithIdentifier(cellID) as? MenuCell
         
-        return cell
+        if cell == nil {
+            // create menu
+            cell  = UIView.fromNib()
+            cell!.createStyle()
+            cell!.setTextContent(MENU_ARRAY[indexPath.row])
+        }
+
+        return cell!
     }
     
-    // MARK:
+    // MARK: UITableViewDelegate
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
    
         // style for cell
@@ -71,6 +76,33 @@ class MenuController: BaseController, UITableViewDelegate, UITableViewDataSource
         
         let menuCell: MenuCell = tableView.cellForRowAtIndexPath(indexPath) as! MenuCell
         menuCell.selected(false)
+        
+    }
+    
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
+    {
+        // not login
+        let menuHeaderID = "MenuHeader"
+        var menuHeader: MenuHeader? = tableView.dequeueReusableHeaderFooterViewWithIdentifier(menuHeaderID) as? MenuHeader
+           
+        if menuHeader == nil {
+            
+            menuHeader = UIView.fromNib()
+
+        }
+        return menuHeader
+        
+        
+//        //logged
+//        let menuHeaderLoggedID = "MenuHeaderLogined"
+//        var menuHeaderLogged: MenuHeaderLogined? = tableView.dequeueReusableHeaderFooterViewWithIdentifier(menuHeaderLoggedID) as? MenuHeaderLogined
+//        
+//        if menuHeaderLogged == nil {
+//            
+//            menuHeaderLogged = UIView.fromNib()
+//            
+//        }
+//        return menuHeaderLogged
         
     }
 

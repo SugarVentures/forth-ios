@@ -26,6 +26,7 @@
                 </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <accessibility key="accessibilityConfiguration" identifier="MenuCell"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="3qS-WH-JSs" secondAttribute="bottom" constant="10" id="4dq-NC-ESd"/>
                 <constraint firstItem="3qS-WH-JSs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BtQ-PB-Aua"/>
