@@ -8,11 +8,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MenuHeaderLogined" customModule="ForthTV" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="62"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="68"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_username" translatesAutoresizingMaskIntoConstraints="NO" id="0mG-o7-pcL">
-                    <rect key="frame" x="0.0" y="1" width="60" height="60"/>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_small" translatesAutoresizingMaskIntoConstraints="NO" id="0mG-o7-pcL">
+                    <rect key="frame" x="0.0" y="4" width="60" height="60"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="60" id="8gD-79-UrJ"/>
                     </constraints>
@@ -23,42 +23,40 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O45-py-2Y3" userLabel="Line1">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awq-Bo-vEW" userLabel="Line2">
-                    <rect key="frame" x="0.0" y="61" width="600" height="1"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                </view>
                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next_icon" translatesAutoresizingMaskIntoConstraints="NO" id="r0x-G9-85p">
                     <rect key="frame" x="540" y="0.0" width="60" height="60"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="60" id="ojh-qc-tC6"/>
                     </constraints>
                 </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="dcv-cM-8QA" userLabel="Line1">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="4"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="Oki-H9-Und" userLabel="Line2">
+                    <rect key="frame" x="0.0" y="64" width="600" height="4"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <accessibility key="accessibilityConfiguration" identifier="MenuHeaderLogined"/>
             <constraints>
+                <constraint firstItem="Oki-H9-Und" firstAttribute="top" secondItem="0mG-o7-pcL" secondAttribute="bottom" id="3ie-sa-FRu"/>
                 <constraint firstItem="r0x-G9-85p" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4RF-NW-2bU"/>
-                <constraint firstItem="0mG-o7-pcL" firstAttribute="top" secondItem="O45-py-2Y3" secondAttribute="bottom" id="69C-9B-PPZ"/>
+                <constraint firstItem="0mG-o7-pcL" firstAttribute="top" secondItem="dcv-cM-8QA" secondAttribute="bottom" id="5Bg-hw-OHE"/>
                 <constraint firstItem="nAh-eS-KqO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="71j-bb-KU2"/>
                 <constraint firstItem="nAh-eS-KqO" firstAttribute="leading" secondItem="0mG-o7-pcL" secondAttribute="trailing" constant="40" id="AeL-1T-Bct"/>
-                <constraint firstAttribute="bottom" secondItem="r0x-G9-85p" secondAttribute="bottom" constant="2" id="Cgd-7O-F0D"/>
-                <constraint firstItem="O45-py-2Y3" firstAttribute="trailing" secondItem="r0x-G9-85p" secondAttribute="trailing" id="GZg-Im-y3z"/>
-                <constraint firstItem="awq-Bo-vEW" firstAttribute="trailing" secondItem="O45-py-2Y3" secondAttribute="trailing" id="Ght-Ho-lgl"/>
-                <constraint firstAttribute="bottom" secondItem="0mG-o7-pcL" secondAttribute="bottom" constant="1" id="H3S-3E-QFa"/>
-                <constraint firstAttribute="bottom" secondItem="awq-Bo-vEW" secondAttribute="bottom" id="MF4-f7-pML"/>
-                <constraint firstItem="awq-Bo-vEW" firstAttribute="top" secondItem="0mG-o7-pcL" secondAttribute="bottom" id="NKe-GN-Prt"/>
+                <constraint firstAttribute="bottom" secondItem="r0x-G9-85p" secondAttribute="bottom" constant="8" id="Cgd-7O-F0D"/>
+                <constraint firstAttribute="bottom" secondItem="0mG-o7-pcL" secondAttribute="bottom" constant="4" id="H3S-3E-QFa"/>
                 <constraint firstAttribute="trailing" secondItem="r0x-G9-85p" secondAttribute="trailing" id="P7A-bJ-hrB"/>
                 <constraint firstItem="r0x-G9-85p" firstAttribute="leading" secondItem="nAh-eS-KqO" secondAttribute="trailing" constant="40" id="PTm-V0-lyS"/>
-                <constraint firstItem="awq-Bo-vEW" firstAttribute="leading" secondItem="0mG-o7-pcL" secondAttribute="leading" id="T35-mp-zxb"/>
-                <constraint firstItem="O45-py-2Y3" firstAttribute="leading" secondItem="0mG-o7-pcL" secondAttribute="leading" id="YTK-yv-ndX"/>
-                <constraint firstItem="0mG-o7-pcL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="i3h-qk-wL8"/>
+                <constraint firstItem="dcv-cM-8QA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RY0-CT-i0V"/>
+                <constraint firstAttribute="bottom" secondItem="Oki-H9-Und" secondAttribute="bottom" id="YQ2-ru-ekQ"/>
+                <constraint firstAttribute="trailing" secondItem="dcv-cM-8QA" secondAttribute="trailing" id="enA-LV-9Yu"/>
+                <constraint firstAttribute="trailing" secondItem="Oki-H9-Und" secondAttribute="trailing" id="hGs-ht-C1a"/>
+                <constraint firstItem="0mG-o7-pcL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="i3h-qk-wL8"/>
+                <constraint firstItem="dcv-cM-8QA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lyZ-gX-NqX"/>
                 <constraint firstItem="0mG-o7-pcL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rzM-if-Ewa"/>
-                <constraint firstAttribute="bottom" secondItem="nAh-eS-KqO" secondAttribute="bottom" constant="12" id="ufP-o1-CeO"/>
-                <constraint firstItem="O45-py-2Y3" firstAttribute="top" secondItem="r0x-G9-85p" secondAttribute="top" id="yxY-83-Gmr"/>
+                <constraint firstAttribute="bottom" secondItem="nAh-eS-KqO" secondAttribute="bottom" constant="18" id="ufP-o1-CeO"/>
+                <constraint firstItem="Oki-H9-Und" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yKK-uc-Bs0"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -69,7 +67,8 @@
         </view>
     </objects>
     <resources>
-        <image name="icon_username" width="30" height="30"/>
+        <image name="avatar_small" width="20" height="20"/>
+        <image name="line" width="291" height="2"/>
         <image name="next_icon" width="30" height="30"/>
     </resources>
 </document>

@@ -8,25 +8,20 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MenuHeader" customModule="ForthTV" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="62"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="68"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUx-BZ-4wh" userLabel="Line1">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="bsL-Vg-0dL" userLabel="Line1">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="4"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="1" id="CGt-Pk-fOy"/>
+                        <constraint firstAttribute="height" constant="4" id="qh6-QB-sXt"/>
                     </constraints>
-                </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11I-Dy-ST0" userLabel="Line2">
-                    <rect key="frame" x="0.0" y="61" width="600" height="1"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="1" id="iGE-WX-ZWD"/>
-                    </constraints>
-                </view>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="ghg-24-TpH" userLabel="Line2">
+                    <rect key="frame" x="0.0" y="64" width="600" height="4"/>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Jm-e8-xpf" userLabel="Login">
-                    <rect key="frame" x="0.0" y="1" width="298" height="60"/>
+                    <rect key="frame" x="0.0" y="4" width="298" height="60"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <state key="normal" title="LOGIN" image="icon_username"/>
                 </button>
@@ -39,22 +34,22 @@
             <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
             <accessibility key="accessibilityConfiguration" identifier="MenuHeader"/>
             <constraints>
-                <constraint firstItem="11I-Dy-ST0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1SU-NO-3vg"/>
-                <constraint firstAttribute="trailing" secondItem="11I-Dy-ST0" secondAttribute="trailing" id="Acx-WU-e0f"/>
-                <constraint firstItem="11I-Dy-ST0" firstAttribute="top" secondItem="6er-R4-Lim" secondAttribute="bottom" id="B8G-P3-kFb"/>
-                <constraint firstAttribute="trailing" secondItem="JUx-BZ-4wh" secondAttribute="trailing" id="Bs4-nR-O4K"/>
+                <constraint firstItem="8Jm-e8-xpf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="55u-JO-D9b"/>
+                <constraint firstAttribute="trailing" secondItem="ghg-24-TpH" secondAttribute="trailing" id="6h0-bn-sGP"/>
                 <constraint firstItem="6er-R4-Lim" firstAttribute="width" secondItem="8Jm-e8-xpf" secondAttribute="width" id="FbF-Ae-Bvv"/>
-                <constraint firstItem="8Jm-e8-xpf" firstAttribute="top" secondItem="JUx-BZ-4wh" secondAttribute="bottom" id="GX5-yJ-fEX"/>
-                <constraint firstItem="JUx-BZ-4wh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="InW-J1-IhP"/>
                 <constraint firstItem="6er-R4-Lim" firstAttribute="height" secondItem="8Jm-e8-xpf" secondAttribute="height" id="MRt-HE-axa"/>
-                <constraint firstItem="11I-Dy-ST0" firstAttribute="top" secondItem="8Jm-e8-xpf" secondAttribute="bottom" id="NGE-47-5FO"/>
+                <constraint firstItem="bsL-Vg-0dL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Mep-ki-K2F"/>
+                <constraint firstItem="bsL-Vg-0dL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MtW-jn-PDG"/>
+                <constraint firstAttribute="bottom" secondItem="ghg-24-TpH" secondAttribute="bottom" id="O03-Z3-g5q"/>
                 <constraint firstAttribute="trailing" secondItem="6er-R4-Lim" secondAttribute="trailing" id="QL9-gH-PpT"/>
                 <constraint firstItem="8Jm-e8-xpf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Rbg-hl-FhW"/>
+                <constraint firstItem="ghg-24-TpH" firstAttribute="top" secondItem="6er-R4-Lim" secondAttribute="bottom" constant="3" id="XYI-Cb-JVE"/>
                 <constraint firstItem="6er-R4-Lim" firstAttribute="leading" secondItem="8Jm-e8-xpf" secondAttribute="trailing" constant="4" id="Xax-Qj-ZMV"/>
+                <constraint firstItem="ghg-24-TpH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZIP-2i-jjH"/>
+                <constraint firstItem="8Jm-e8-xpf" firstAttribute="top" secondItem="bsL-Vg-0dL" secondAttribute="bottom" id="c6V-Dh-t7h"/>
                 <constraint firstItem="6er-R4-Lim" firstAttribute="leading" secondItem="8Jm-e8-xpf" secondAttribute="trailing" constant="4" id="cPO-A2-Hta"/>
-                <constraint firstItem="JUx-BZ-4wh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dIx-YK-nz7"/>
-                <constraint firstAttribute="bottom" secondItem="11I-Dy-ST0" secondAttribute="bottom" id="gaE-Qx-I3l"/>
-                <constraint firstItem="6er-R4-Lim" firstAttribute="top" secondItem="JUx-BZ-4wh" secondAttribute="bottom" id="ntX-PV-Ebl"/>
+                <constraint firstAttribute="trailing" secondItem="bsL-Vg-0dL" secondAttribute="trailing" id="ch0-at-dMm"/>
+                <constraint firstItem="ghg-24-TpH" firstAttribute="top" secondItem="8Jm-e8-xpf" secondAttribute="bottom" id="etl-hK-SOk"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -63,5 +58,6 @@
     <resources>
         <image name="icon_register" width="30" height="30"/>
         <image name="icon_username" width="30" height="30"/>
+        <image name="line" width="291" height="2"/>
     </resources>
 </document>
