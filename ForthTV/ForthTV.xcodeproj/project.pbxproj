@@ -33,6 +33,7 @@
 		FDCC5B631C44B51B005BFD5F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC5B621C44B51B005BFD5F /* UIView.swift */; };
 		FDCC5B681C44DD21005BFD5F /* MenuHeaderLogined.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCC5B671C44DD21005BFD5F /* MenuHeaderLogined.xib */; };
 		FDCC5B6B1C44E8D9005BFD5F /* MenuHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCC5B6A1C44E8D9005BFD5F /* MenuHeader.xib */; };
+		FDD3A48E1C4749300019AE84 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD3A48D1C4749300019AE84 /* QuartzCore.framework */; };
 		FDE7B0891C45F0E900086362 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE7B0881C45F0E900086362 /* VideoCell.swift */; };
 		FDE7B08C1C45F15D00086362 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDE7B08B1C45F15D00086362 /* VideoCell.xib */; };
 		FDE7B08E1C46233B00086362 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE7B08D1C46233B00086362 /* VideoModel.swift */; };
@@ -104,6 +105,7 @@
 		FDCC5B621C44B51B005BFD5F /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = 01.Common/UIView.swift; sourceTree = "<group>"; };
 		FDCC5B671C44DD21005BFD5F /* MenuHeaderLogined.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuHeaderLogined.xib; path = 02.Controllers/MenuHeaderLogined.xib; sourceTree = "<group>"; };
 		FDCC5B6A1C44E8D9005BFD5F /* MenuHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuHeader.xib; path = 02.Controllers/MenuHeader.xib; sourceTree = "<group>"; };
+		FDD3A48D1C4749300019AE84 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		FDE7B0881C45F0E900086362 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoCell.swift; path = 02.Controllers/VideoCell.swift; sourceTree = "<group>"; };
 		FDE7B08B1C45F15D00086362 /* VideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VideoCell.xib; path = 02.Controllers/VideoCell.xib; sourceTree = "<group>"; };
 		FDE7B08D1C46233B00086362 /* VideoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoModel.swift; path = 00.Models/VideoModel.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD3A48E1C4749300019AE84 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +316,7 @@
 		FDFFEA751C3A03D900130400 = {
 			isa = PBXGroup;
 			children = (
+				FDD3A48D1C4749300019AE84 /* QuartzCore.framework */,
 				FDFFEA801C3A03D900130400 /* ForthTV */,
 				FDFFEA951C3A03D900130400 /* ForthTVTests */,
 				FDFFEAA01C3A03D900130400 /* ForthTVUITests */,

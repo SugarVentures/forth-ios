@@ -17,12 +17,31 @@
                     <view key="view" contentMode="scaleToFill" id="tUd-e8-pKv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="220" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9vw-Dg-OU6">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="IfB-xy-Kur" id="6Vv-gP-akr"/>
+                                    <outlet property="delegate" destination="IfB-xy-Kur" id="eDY-9g-TxL"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.33305177536499975" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="9vw-Dg-OU6" secondAttribute="trailing" constant="-20" id="1lG-RC-rKf"/>
+                            <constraint firstItem="gxQ-ma-JR5" firstAttribute="top" secondItem="9vw-Dg-OU6" secondAttribute="bottom" id="8w2-jn-VbY"/>
+                            <constraint firstItem="9vw-Dg-OU6" firstAttribute="top" secondItem="tUd-e8-pKv" secondAttribute="topMargin" id="Obg-Up-KdP"/>
+                            <constraint firstItem="9vw-Dg-OU6" firstAttribute="leading" secondItem="tUd-e8-pKv" secondAttribute="leadingMargin" constant="-20" id="uLp-GC-Jr4"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="videoListTable" destination="9vw-Dg-OU6" id="20Q-e4-Xe4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7hj-Ln-5FB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="376" y="839"/>
+            <point key="canvasLocation" x="407" y="982"/>
         </scene>
         <!--MenuController-->
         <scene sceneID="vg4-mB-6kL">

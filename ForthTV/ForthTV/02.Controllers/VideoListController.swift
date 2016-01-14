@@ -8,12 +8,18 @@
 
 import UIKit
 
-class VideoListController: BaseController {
+class VideoListController: BaseController, UITableViewDelegate, UITableViewDataSource {
 
+    // MARK: UI
+    @IBOutlet weak var videoListTable: UITableView!
+    
+    
+    // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //configure for beginning
+        self.configureForBeginning()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -26,15 +32,42 @@ class VideoListController: BaseController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // MARK: Methods:
+    func configureForBeginning() {
+        
+       // for videoListTable
+        videoListTable.estimatedRowHeight = 220.0
+        videoListTable.rowHeight = UITableViewAutomaticDimension
+        videoListTable.separatorStyle = .None
+        
     }
-    */
-
+   
+    
+    // MARK: UITableViewDataSource
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return 10
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cellID = "VideoCell"
+        var cell : VideoCell? = tableView .dequeueReusableCellWithIdentifier(cellID) as? VideoCell
+        
+        if cell == nil {
+            // create menu
+            cell  = UIView.fromNib()
+            cell!.videoModel = VideoModel()
+            
+            cell!.displayData(VIDEO_DATA_STATUS.LOADING)
+        }
+        
+        return cell!
+    }
+    
+    // MARK: UITableViewDelegate
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        
+    }
 }

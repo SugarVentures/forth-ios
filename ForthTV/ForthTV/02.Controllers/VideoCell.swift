@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QuartzCore
 
 enum VIDEO_DATA_STATUS {
     case LOADING
@@ -31,61 +32,52 @@ class VideoCell: UITableViewCell {
     // MARK: Properties
     var videoModel: VideoModel?
     
+    //MARK: Life Cycle
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        // create default UI
+        self.createDefaultUI()
+    }
+    
     
     // MARK: Methods
-    func setLoadingStatus (dataStatus:VIDEO_DATA_STATUS) {
+    func displayData(videoStatus:VIDEO_DATA_STATUS) {
         
-        if dataStatus == .LOADING
+        liveIcon.hidden = self.videoModel!.isLiveStreaming!
+        
+        if videoStatus == .LOADING
         {
-            self.createDefaultUI()
+            videoThumbnail.image = UIImage(named: "loadingvideo")
+            bottomView.hidden = false
+            
         }
         else
         {
-            self.createloadedCaseUI()
+            
+            bottomView.hidden = false
+            
+            // set data from model
+            channelTitle.text = self.videoModel!.channelTitle
+            channelOwner.text = self.videoModel!.channelOwner
+            gameTitle.text = self.videoModel!.gameTitle
+            countOfViews.text = self.videoModel!.numberOfViews
+            countOfLikes.text = self.videoModel!.numberOfLikes
+            
+            // thumbnail will loading from service
+
         }
         
     }
     
     private func createDefaultUI() {
         
-        // show onlythumbmail image && hide all
-        self.getDefaultData()
+        mainView.layer.cornerRadius = 6.0
+        mainView.layer.masksToBounds = true
         
-        
-    }
-    
-    private func createloadedCaseUI() {
-        
-        // show onlythumbmail image && hide all
-    }
-    private func displayData(videoModel:VideoModel, videoStatus:VIDEO_DATA_STATUS) {
-        
-        videoThumbnail.image = UIImage(named: <#T##String#>)
-        
-//        @IBOutlet weak var mainView: UIView!
-//        @IBOutlet weak var videoThumbnail: UIImageView!
-//        @IBOutlet weak var liveIcon: UIImageView!
-//        
-//        @IBOutlet weak var bottomView: UIView!
-//        @IBOutlet weak var channelTitle: UILabel!
-//        @IBOutlet weak var channelOwner: UILabel!
-//        @IBOutlet weak var gameTitle: UILabel!
-//        @IBOutlet weak var countOfViews: UILabel!
-//        @IBOutlet weak var countOfLikes: UILabel!
-        
+        videoThumbnail.layer.cornerRadius = 6.0
+        videoThumbnail.layer.masksToBounds = true
         
     }
     
-    private func getDefaultData() {
-        
-        let videoModel: VideoModel = VideoModel ();
-        videoModel.videoThumbnail = "loading_video"
-        videoModel.isLiveStreaming = false
-        
-        self.videoModel = videoModel
-    }
-    
-    
-
-
 }
