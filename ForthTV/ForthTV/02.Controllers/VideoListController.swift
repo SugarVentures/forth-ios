@@ -35,9 +35,7 @@ class VideoListController: BaseController, UITableViewDelegate, UITableViewDataS
     // MARK: Methods:
     func configureForBeginning() {
         
-       // for videoListTable
-        videoListTable.estimatedRowHeight = 220.0
-        videoListTable.rowHeight = UITableViewAutomaticDimension
+        // for videoListTable
         videoListTable.separatorStyle = .None
         
     }

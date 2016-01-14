@@ -72,11 +72,28 @@ class VideoCell: UITableViewCell {
     
     private func createDefaultUI() {
         
+        // for mainView
         mainView.layer.cornerRadius = 6.0
         mainView.layer.masksToBounds = true
         
+        // for videoThumbnail
         videoThumbnail.layer.cornerRadius = 6.0
         videoThumbnail.layer.masksToBounds = true
+        
+        // for channelTitle
+        channelTitle.textColor = UIColor.whiteColor()
+        
+        // for channelOwner
+        channelOwner.textColor = UIColor.whiteColor()
+        
+        // for gameTitle
+        gameTitle.textColor = THEME_YELLOW_COLOR
+        
+        // for countOfViews
+        countOfViews.textColor = UIColor.whiteColor()
+        
+        // for countOfLikes
+        countOfLikes.textColor = UIColor.whiteColor()
         
     }
     
