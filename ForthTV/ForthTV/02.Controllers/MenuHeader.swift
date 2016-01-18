@@ -8,6 +8,30 @@
 
 import UIKit
 
-class MenuHeader: UITableViewHeaderFooterView {
+enum HEADER_BUTTON_TYPE{
+    case LOGIN
+    case REGISTER
+}
 
+protocol MenuHeaderDelegate {
+    
+    func buttonTapped(buttonType: HEADER_BUTTON_TYPE)
+}
+
+class MenuHeader: UITableViewHeaderFooterView {
+    
+    // MARK:Properties
+    var delegate: MenuHeaderDelegate?
+   
+    
+    // MARK:Actions
+    @IBAction func loginTapped(sender: AnyObject) {
+        
+    self.delegate!.buttonTapped(HEADER_BUTTON_TYPE.LOGIN)
+        
+    }
+    
+    @IBAction func registerTapped(sender: AnyObject) {
+         self.delegate!.buttonTapped(HEADER_BUTTON_TYPE.REGISTER)
+    }
 }

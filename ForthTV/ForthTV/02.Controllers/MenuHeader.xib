@@ -24,11 +24,17 @@
                     <rect key="frame" x="0.0" y="4" width="298" height="60"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <state key="normal" title="LOGIN" image="icon_username"/>
+                    <connections>
+                        <action selector="loginTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="NQb-Cy-C2b"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6er-R4-Lim" userLabel="Register">
                     <rect key="frame" x="302" y="1" width="298" height="60"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <state key="normal" title="REGISTER" image="icon_register"/>
+                    <connections>
+                        <action selector="registerTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="SFH-BD-t7c"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
