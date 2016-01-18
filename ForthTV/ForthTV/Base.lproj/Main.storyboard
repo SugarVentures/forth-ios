@@ -102,11 +102,98 @@
                     <view key="view" contentMode="scaleToFill" id="6c7-jw-sNu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.53883642890000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="VIDEO TITLE" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hid-pd-Uez" userLabel="VIDEOTITLE">
+                                <rect key="frame" x="30" y="51" width="550" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pzN-4Z-2ux"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STREAM IN PRIVATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJS-6N-WwA" userLabel="STREAMINPRIVATE">
+                                <rect key="frame" x="30" y="116" width="167" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="nhr-hZ-BDE"/>
+                                    <constraint firstAttribute="width" constant="167" id="sec-jS-nZx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MATURE CONTENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlB-jO-qno">
+                                <rect key="frame" x="30" y="167" width="167" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="l2g-lA-buH"/>
+                                    <constraint firstAttribute="height" constant="21" id="p9o-13-e7e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OnV-HN-Mvi" userLabel="StreamInPrivateSwitch">
+                                <rect key="frame" x="531" y="111" width="51" height="31"/>
+                                <connections>
+                                    <action selector="privateSwitchChanged:" destination="tNf-RH-ib4" eventType="valueChanged" id="V2p-0U-0qe"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aVI-01-UMz" userLabel="MatureContentSwitch">
+                                <rect key="frame" x="531" y="167" width="51" height="31"/>
+                                <connections>
+                                    <action selector="matureContentChanged:" destination="tNf-RH-ib4" eventType="valueChanged" id="UEd-UM-lw1"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dxz-Eg-Xz1">
+                                <rect key="frame" x="207" y="231" width="197" height="30"/>
+                                <color key="backgroundColor" red="0.93290513340000003" green="1" blue="0.074930098060000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="197" id="KOa-93-zzC"/>
+                                    <constraint firstAttribute="height" constant="30" id="qMU-nM-1Pe"/>
+                                </constraints>
+                                <state key="normal" title="  BROADCAST NOW  ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="broacastTapped:" destination="tNf-RH-ib4" eventType="touchUpInside" id="6mm-Tk-cC8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nlB-jO-qno" firstAttribute="top" secondItem="uJS-6N-WwA" secondAttribute="bottom" constant="30" id="3ww-k3-aed"/>
+                            <constraint firstItem="hid-pd-Uez" firstAttribute="centerX" secondItem="6c7-jw-sNu" secondAttribute="centerX" constant="5" id="5S3-Co-XYd"/>
+                            <constraint firstItem="OnV-HN-Mvi" firstAttribute="centerY" secondItem="uJS-6N-WwA" secondAttribute="centerY" id="6al-Sa-x9g"/>
+                            <constraint firstItem="nlB-jO-qno" firstAttribute="leading" secondItem="hid-pd-Uez" secondAttribute="leading" id="7ZK-1A-w2a"/>
+                            <constraint firstItem="hid-pd-Uez" firstAttribute="leading" secondItem="6c7-jw-sNu" secondAttribute="leadingMargin" constant="10" id="TLO-p5-Ja0"/>
+                            <constraint firstItem="Dxz-Eg-Xz1" firstAttribute="top" secondItem="hid-pd-Uez" secondAttribute="bottom" constant="150" id="WyN-aG-EmR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hid-pd-Uez" secondAttribute="trailing" id="Z1w-q0-RaU"/>
+                            <constraint firstItem="hid-pd-Uez" firstAttribute="top" secondItem="OHb-4Q-wUu" secondAttribute="bottom" constant="31" id="bXr-H7-Nia"/>
+                            <constraint firstItem="aVI-01-UMz" firstAttribute="trailing" secondItem="hid-pd-Uez" secondAttribute="trailing" id="drD-6n-NgI"/>
+                            <constraint firstItem="aVI-01-UMz" firstAttribute="centerY" secondItem="nlB-jO-qno" secondAttribute="centerY" constant="5" id="icW-0c-mXT"/>
+                            <constraint firstItem="uJS-6N-WwA" firstAttribute="leading" secondItem="hid-pd-Uez" secondAttribute="leading" id="jAt-QH-9CY"/>
+                            <constraint firstItem="OnV-HN-Mvi" firstAttribute="trailing" secondItem="hid-pd-Uez" secondAttribute="trailing" id="q1p-Ml-KxY"/>
+                            <constraint firstItem="Dxz-Eg-Xz1" firstAttribute="centerY" secondItem="hid-pd-Uez" secondAttribute="centerY" id="qCZ-iv-gMm"/>
+                            <constraint firstItem="Dxz-Eg-Xz1" firstAttribute="centerX" secondItem="hid-pd-Uez" secondAttribute="centerX" id="qt5-Xe-LKY"/>
+                            <constraint firstItem="uJS-6N-WwA" firstAttribute="top" secondItem="hid-pd-Uez" secondAttribute="bottom" constant="35" id="wfN-sP-Xdr"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="qCZ-iv-gMm"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="btnBroadcast" destination="Dxz-Eg-Xz1" id="m46-oh-rx7"/>
+                        <outlet property="matureContent" destination="nlB-jO-qno" id="Gw6-oK-QcN"/>
+                        <outlet property="matureContentSwitch" destination="aVI-01-UMz" id="c1I-Fs-EMp"/>
+                        <outlet property="privateStream" destination="uJS-6N-WwA" id="Azb-89-b06"/>
+                        <outlet property="privateStreamSwitch" destination="OnV-HN-Mvi" id="mbP-wY-xCz"/>
+                        <outlet property="videoTitle" destination="hid-pd-Uez" id="Hwh-1F-cEZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xd6-c8-Qbr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="323" y="239"/>
         </scene>
     </scenes>
     <resources>

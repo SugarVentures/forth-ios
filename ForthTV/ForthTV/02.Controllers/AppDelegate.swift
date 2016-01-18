@@ -53,6 +53,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: Internal Methods
     private func createMenuView() {
         
+        // style navigation
+        UINavigationBar.appearance().barTintColor = UIColor(red: 234.0/255.0, green: 46.0/255.0, blue: 73.0/255.0, alpha: 1.0)
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        
         // center
         videoListController = Master.sharedInstance.getController(PageType.VIDEO_LIST) as! VideoListController;
         
