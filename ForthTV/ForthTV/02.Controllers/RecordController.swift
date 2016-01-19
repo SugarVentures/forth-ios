@@ -118,7 +118,7 @@ class RecordController: BaseController,
     }
 
     //MARK: Actions
-    @IBAction func toggleMovieRecording(_: AnyObject) {
+    @IBAction func recordTapped(sender: AnyObject) {
         // Disable the Camera button until recording finishes, and disable the Record button until recording starts or finishes. See the
         // AVCaptureFileOutputRecordingDelegate methods.
         self.cameraButton.enabled = false
@@ -129,7 +129,7 @@ class RecordController: BaseController,
         
     }
     
-    @IBAction func changeCamera(_: AnyObject) {
+    @IBAction func changeCameraTapped(sender: AnyObject) {
         self.cameraButton.enabled = false
         self.recordButton.enabled = false
         
@@ -139,6 +139,9 @@ class RecordController: BaseController,
     }
     
     @IBAction func chatTapped(sender: AnyObject) {
+        
+        // logic : if chat is hide -> show and otherwise
+        chatTable.hidden = !chatTable.hidden
         
     }
     

@@ -266,7 +266,7 @@
                                         </constraints>
                                         <state key="normal" image="icon_switchcamera"/>
                                         <connections>
-                                            <action selector="changeCamera:" destination="syv-kq-mQD" eventType="touchUpInside" id="yTP-Hr-TZ5"/>
+                                            <action selector="changeCameraTapped:" destination="syv-kq-mQD" eventType="touchUpInside" id="7cP-yR-rUW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzP-N2-MCN" userLabel="Record_Button">
@@ -278,7 +278,7 @@
                                         </constraints>
                                         <state key="normal" image="icon_createstream"/>
                                         <connections>
-                                            <action selector="toggleMovieRecording:" destination="syv-kq-mQD" eventType="touchUpInside" id="oCc-F0-7SK"/>
+                                            <action selector="recordTapped:" destination="syv-kq-mQD" eventType="touchUpInside" id="oU1-kF-QMg"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eho-Ys-K0v" userLabel="Chat_Button">

@@ -72,6 +72,9 @@ class VideoCell: UITableViewCell {
     
     private func createDefaultUI() {
         
+        // for cell
+        self.selectionStyle = .None
+        
         // for mainView
         mainView.layer.cornerRadius = 6.0
         mainView.layer.masksToBounds = true
