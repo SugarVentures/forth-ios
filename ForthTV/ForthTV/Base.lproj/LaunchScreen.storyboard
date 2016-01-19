@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FTV-Welcome Page" translatesAutoresizingMaskIntoConstraints="NO" id="9K9-qs-kgA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FTV-WelcomePage" translatesAutoresizingMaskIntoConstraints="NO" id="9K9-qs-kgA">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                         </subviews>
@@ -37,6 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="FTV-Welcome Page" width="750" height="1334"/>
+        <image name="FTV-WelcomePage" width="375" height="667"/>
     </resources>
 </document>

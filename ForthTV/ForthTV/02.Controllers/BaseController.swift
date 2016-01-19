@@ -26,5 +26,5 @@ public class BaseController: UIViewController {
     
     // MARK: Method
     
-    public func setObject(object:NSObject){}
+    public func setObject(object:Any?){}
 }

@@ -34,14 +34,14 @@ class Master: NSObject {
 
     //MARK: Master's Methods
     
-    func presentController(currentController:UIViewController, pageType:PageType, animated:Bool, object:NSObject)
+    func presentController(currentController:UIViewController, pageType:PageType, animated:Bool, object:Any?)
     {
         let controller = self.getController(pageType)
         controller.setObject(object)
         currentController.presentViewController(controller, animated: animated, completion: nil)
     }
     
-    func pushController(currentController:UIViewController, pageType:PageType, animated:Bool, object:NSObject)
+    func pushController(currentController:UIViewController, pageType:PageType, animated:Bool, object:Any?)
     {
         let controller = self.getController(pageType)
         controller.setObject(object)

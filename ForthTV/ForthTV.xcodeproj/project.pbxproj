@@ -26,6 +26,7 @@
 		FD7286B41C43B3D1007632B6 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7286B01C43B3D1007632B6 /* UIApplication.swift */; };
 		FD7286B51C43B3D1007632B6 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7286B11C43B3D1007632B6 /* UIColor.swift */; };
 		FD7286B61C43B3D1007632B6 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7286B21C43B3D1007632B6 /* UIViewController.swift */; };
+		FDC52E361C4CABAD0083F436 /* TextValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC52E351C4CABAD0083F436 /* TextValues.swift */; };
 		FDCC5B5A1C44AE1A005BFD5F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC5B591C44AE1A005BFD5F /* MenuCell.swift */; };
 		FDCC5B5C1C44AE61005BFD5F /* MenuHeaderLogined.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC5B5B1C44AE61005BFD5F /* MenuHeaderLogined.swift */; };
 		FDCC5B5E1C44AF99005BFD5F /* MenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC5B5D1C44AF99005BFD5F /* MenuHeader.swift */; };
@@ -34,6 +35,8 @@
 		FDCC5B681C44DD21005BFD5F /* MenuHeaderLogined.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCC5B671C44DD21005BFD5F /* MenuHeaderLogined.xib */; };
 		FDCC5B6B1C44E8D9005BFD5F /* MenuHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCC5B6A1C44E8D9005BFD5F /* MenuHeader.xib */; };
 		FDD3A48E1C4749300019AE84 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD3A48D1C4749300019AE84 /* QuartzCore.framework */; };
+		FDDB581B1C4CEBF6007C24B6 /* EXRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDB581A1C4CEBF6007C24B6 /* EXRecordController.swift */; };
+		FDDB99151C4DC5790043791B /* PreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDB99141C4DC5790043791B /* PreView.swift */; };
 		FDE7B0891C45F0E900086362 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE7B0881C45F0E900086362 /* VideoCell.swift */; };
 		FDE7B08C1C45F15D00086362 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDE7B08B1C45F15D00086362 /* VideoCell.xib */; };
 		FDE7B08E1C46233B00086362 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE7B08D1C46233B00086362 /* VideoModel.swift */; };
@@ -98,6 +101,7 @@
 		FD7286B01C43B3D1007632B6 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIApplication.swift; path = 01.Common/UIApplication.swift; sourceTree = "<group>"; };
 		FD7286B11C43B3D1007632B6 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = 01.Common/UIColor.swift; sourceTree = "<group>"; };
 		FD7286B21C43B3D1007632B6 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = 01.Common/UIViewController.swift; sourceTree = "<group>"; };
+		FDC52E351C4CABAD0083F436 /* TextValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextValues.swift; path = 01.Common/TextValues.swift; sourceTree = "<group>"; };
 		FDCC5B591C44AE1A005BFD5F /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuCell.swift; path = 02.Controllers/MenuCell.swift; sourceTree = "<group>"; };
 		FDCC5B5B1C44AE61005BFD5F /* MenuHeaderLogined.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuHeaderLogined.swift; path = 02.Controllers/MenuHeaderLogined.swift; sourceTree = "<group>"; };
 		FDCC5B5D1C44AF99005BFD5F /* MenuHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuHeader.swift; path = 02.Controllers/MenuHeader.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 		FDCC5B671C44DD21005BFD5F /* MenuHeaderLogined.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuHeaderLogined.xib; path = 02.Controllers/MenuHeaderLogined.xib; sourceTree = "<group>"; };
 		FDCC5B6A1C44E8D9005BFD5F /* MenuHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuHeader.xib; path = 02.Controllers/MenuHeader.xib; sourceTree = "<group>"; };
 		FDD3A48D1C4749300019AE84 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FDDB581A1C4CEBF6007C24B6 /* EXRecordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EXRecordController.swift; path = 02.Controllers/EXRecordController.swift; sourceTree = "<group>"; };
+		FDDB99141C4DC5790043791B /* PreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreView.swift; path = 02.Controllers/PreView.swift; sourceTree = "<group>"; };
 		FDE7B0881C45F0E900086362 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoCell.swift; path = 02.Controllers/VideoCell.swift; sourceTree = "<group>"; };
 		FDE7B08B1C45F15D00086362 /* VideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VideoCell.xib; path = 02.Controllers/VideoCell.xib; sourceTree = "<group>"; };
 		FDE7B08D1C46233B00086362 /* VideoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoModel.swift; path = 00.Models/VideoModel.swift; sourceTree = "<group>"; };
@@ -199,7 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				FD57D6621C3CCD8900DEDDCC /* BroadcastController.swift */,
-				FD57D6641C3CCD9900DEDDCC /* RecordController.swift */,
+				FDDB58191C4CEB92007C24B6 /* RecordController */,
 			);
 			name = 04.Broadcasting;
 			sourceTree = "<group>";
@@ -229,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				FD57D6711C3CCF1900DEDDCC /* AppConfigure.swift */,
+				FDC52E351C4CABAD0083F436 /* TextValues.swift */,
 				FD57D6731C3CCF2D00DEDDCC /* ServiceConfigure.swift */,
 			);
 			name = 01.App;
@@ -270,6 +277,16 @@
 				FDCC5B6A1C44E8D9005BFD5F /* MenuHeader.xib */,
 			);
 			name = MenuHeader;
+			sourceTree = "<group>";
+		};
+		FDDB58191C4CEB92007C24B6 /* RecordController */ = {
+			isa = PBXGroup;
+			children = (
+				FD57D6641C3CCD9900DEDDCC /* RecordController.swift */,
+				FDDB99141C4DC5790043791B /* PreView.swift */,
+				FDDB581A1C4CEBF6007C24B6 /* EXRecordController.swift */,
+			);
+			name = RecordController;
 			sourceTree = "<group>";
 		};
 		FDE7B0871C45F08100086362 /* 01.VideoList */ = {
@@ -550,8 +567,10 @@
 				FDE7B0A61C4645BB00086362 /* Manager.swift in Sources */,
 				FDE7B0AA1C4645BB00086362 /* Response.swift in Sources */,
 				FDE7B08E1C46233B00086362 /* VideoModel.swift in Sources */,
+				FDDB99151C4DC5790043791B /* PreView.swift in Sources */,
 				FDCC5B5C1C44AE61005BFD5F /* MenuHeaderLogined.swift in Sources */,
 				FDCC5B5E1C44AF99005BFD5F /* MenuHeader.swift in Sources */,
+				FDC52E361C4CABAD0083F436 /* TextValues.swift in Sources */,
 				FD7286B31C43B3D1007632B6 /* String.swift in Sources */,
 				FD57D65A1C3CCD0600DEDDCC /* ChattingController.swift in Sources */,
 				FD57D67C1C3CD36D00DEDDCC /* Master.swift in Sources */,
@@ -568,6 +587,7 @@
 				FDE7B0AB1C4645BB00086362 /* ResponseSerialization.swift in Sources */,
 				FD57D6551C3CCC5300DEDDCC /* RegisterController.swift in Sources */,
 				FD57D66E1C3CCE9800DEDDCC /* MenuController.swift in Sources */,
+				FDDB581B1C4CEBF6007C24B6 /* EXRecordController.swift in Sources */,
 				FD3F928E1C3E559F00808ECB /* BaseController.swift in Sources */,
 				FD57D6581C3CCCEE00DEDDCC /* VideoDetailController.swift in Sources */,
 				FDEA9E591C42509A005E8651 /* SlideMenuController.swift in Sources */,
@@ -726,10 +746,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tinh Thach Hinh (FK97M9C4CM)";
 				INFOPLIST_FILE = ForthTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sugar.sg.ForthTV;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.sugar.ForthTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0a4b6cb3-6e23-4f5b-9802-e6c5f19e4ef3";
 			};
 			name = Debug;
 		};
@@ -737,10 +759,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tinh Thach Hinh (FK97M9C4CM)";
 				INFOPLIST_FILE = ForthTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sugar.sg.ForthTV;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.sugar.ForthTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0a4b6cb3-6e23-4f5b-9802-e6c5f19e4ef3";
 			};
 			name = Release;
 		};

@@ -41,6 +41,9 @@ class BroadcastController: BaseController {
     
     @IBAction func broacastTapped(sender: AnyObject) {
         
+        // Call recording video Page
+        Master.sharedInstance.presentController(self, pageType: PageType.RECORD, animated: true, object: nil)
+        
     }
     
     // MARK: Methods

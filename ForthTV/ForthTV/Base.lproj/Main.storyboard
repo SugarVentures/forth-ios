@@ -41,7 +41,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7hj-Ln-5FB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="407" y="982"/>
+            <point key="canvasLocation" x="323" y="893"/>
         </scene>
         <!--MenuController-->
         <scene sceneID="vg4-mB-6kL">
@@ -195,8 +195,126 @@
             </objects>
             <point key="canvasLocation" x="323" y="239"/>
         </scene>
+        <!--RecordController-->
+        <scene sceneID="HNN-Zw-cvd">
+            <objects>
+                <viewController storyboardIdentifier="RecordController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="syv-kq-mQD" userLabel="RecordController" customClass="RecordController" customModule="ForthTV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hsu-J8-fJn"/>
+                        <viewControllerLayoutGuide type="bottom" id="QdW-kB-TiZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lAl-mB-9ym">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="phy-u4-bJU" userLabel="PreView" customClass="PreView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="G7A-iA-DEP" appends="YES" id="3Qh-i7-sjz"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mJz-Ae-l1W" userLabel="TopView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_live" translatesAutoresizingMaskIntoConstraints="NO" id="o9V-BM-wYy">
+                                        <rect key="frame" x="475" y="27" width="100" height="30"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYP-pV-Uap" userLabel="Recording_Time">
+                                        <rect key="frame" x="25" y="32" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.83593183260000004" green="0.51865871939999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2u1-zw-xd9" userLabel="ChatTableView">
+                                <rect key="frame" x="0.0" y="308" width="600" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5t2-0Q-SX5" userLabel="BottomView">
+                                <rect key="frame" x="0.0" y="508" width="600" height="92"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_like" translatesAutoresizingMaskIntoConstraints="NO" id="iyn-0F-i0Z">
+                                        <rect key="frame" x="10" y="40" width="24" height="24"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_view" translatesAutoresizingMaskIntoConstraints="NO" id="juq-sv-CS9">
+                                        <rect key="frame" x="566" y="40" width="24" height="24"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2d-dT-QUe" userLabel="Change_Camera_Button">
+                                        <rect key="frame" x="220" y="31" width="40" height="40"/>
+                                        <color key="backgroundColor" red="0.83593183260000004" green="0.51865871939999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="icon_switchcamera"/>
+                                        <connections>
+                                            <action selector="changeCamera:" destination="syv-kq-mQD" eventType="touchUpInside" id="yTP-Hr-TZ5"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="11K" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfu-S1-AwY" userLabel="like_Label">
+                                        <rect key="frame" x="40" y="41" width="26" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="11K" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NM-D6-Ufg" userLabel="view_Label">
+                                        <rect key="frame" x="536" y="41" width="26" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzP-N2-MCN" userLabel="Record_Button">
+                                        <rect key="frame" x="270" y="26" width="60" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.081942766766833652" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="icon_createstream"/>
+                                        <connections>
+                                            <action selector="toggleMovieRecording:" destination="syv-kq-mQD" eventType="touchUpInside" id="oCc-F0-7SK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eho-Ys-K0v" userLabel="Chat_Button">
+                                        <rect key="frame" x="340" y="31" width="40" height="40"/>
+                                        <color key="backgroundColor" red="0.83593183260000004" green="0.51865871939999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="icon_chatactive"/>
+                                        <connections>
+                                            <action selector="chatTapped:" destination="syv-kq-mQD" eventType="touchUpInside" id="paH-rR-9xG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.33305177540000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.33305177540000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraButton" destination="h2d-dT-QUe" id="k0l-jj-mVf"/>
+                        <outlet property="chatButton" destination="eho-Ys-K0v" id="m82-Rl-oPj"/>
+                        <outlet property="chatTable" destination="2u1-zw-xd9" id="wLN-g4-F1h"/>
+                        <outlet property="likeLabel" destination="qfu-S1-AwY" id="mCc-Fp-4cr"/>
+                        <outlet property="liveIcon" destination="o9V-BM-wYy" id="9UY-lu-YKf"/>
+                        <outlet property="previewView" destination="phy-u4-bJU" id="vfv-of-MCQ"/>
+                        <outlet property="recordButton" destination="tzP-N2-MCN" id="8nN-7S-Kdr"/>
+                        <outlet property="recordingTime" destination="iYP-pV-Uap" id="Lkc-Qz-Wg4"/>
+                        <outlet property="view" destination="lAl-mB-9ym" id="Hac-uW-tmp"/>
+                        <outlet property="viewLabel" destination="3NM-D6-Ufg" id="Tzn-ks-jr8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DPM-Me-EJf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="G7A-iA-DEP">
+                    <connections>
+                        <action selector="focusAndExposeTap:" destination="syv-kq-mQD" id="kZQ-xm-Hcz"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="317" y="1545"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="icon_chatactive" width="30" height="30"/>
+        <image name="icon_createstream" width="30" height="30"/>
+        <image name="icon_like" width="30" height="30"/>
+        <image name="icon_live" width="53" height="23"/>
+        <image name="icon_switchcamera" width="30" height="30"/>
+        <image name="icon_view" width="30" height="30"/>
         <image name="logo_big" width="284" height="113"/>
     </resources>
 </document>
