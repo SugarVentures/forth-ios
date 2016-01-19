@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		FD3F928E1C3E559F00808ECB /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3F928D1C3E559F00808ECB /* BaseController.swift */; };
+		FD45C3451C4DE3A500B34255 /* ChatItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45C3441C4DE3A500B34255 /* ChatItemCell.swift */; };
+		FD45C3471C4DE3C000B34255 /* ChatItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD45C3461C4DE3C000B34255 /* ChatItemCell.xib */; };
+		FD45C3491C4DEB4B00B34255 /* ConversationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45C3481C4DEB4B00B34255 /* ConversationModel.swift */; };
 		FD57D6531C3CCC4100DEDDCC /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D6521C3CCC4100DEDDCC /* LoginController.swift */; };
 		FD57D6551C3CCC5300DEDDCC /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D6541C3CCC5300DEDDCC /* RegisterController.swift */; };
 		FD57D6581C3CCCEE00DEDDCC /* VideoDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57D6571C3CCCEE00DEDDCC /* VideoDetailController.swift */; };
@@ -35,7 +38,7 @@
 		FDCC5B681C44DD21005BFD5F /* MenuHeaderLogined.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCC5B671C44DD21005BFD5F /* MenuHeaderLogined.xib */; };
 		FDCC5B6B1C44E8D9005BFD5F /* MenuHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCC5B6A1C44E8D9005BFD5F /* MenuHeader.xib */; };
 		FDD3A48E1C4749300019AE84 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD3A48D1C4749300019AE84 /* QuartzCore.framework */; };
-		FDDB581B1C4CEBF6007C24B6 /* EXRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDB581A1C4CEBF6007C24B6 /* EXRecordController.swift */; };
+		FDDB581B1C4CEBF6007C24B6 /* RecordController+AVCam.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDB581A1C4CEBF6007C24B6 /* RecordController+AVCam.swift */; };
 		FDDB99151C4DC5790043791B /* PreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDB99141C4DC5790043791B /* PreView.swift */; };
 		FDE7B0891C45F0E900086362 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE7B0881C45F0E900086362 /* VideoCell.swift */; };
 		FDE7B08C1C45F15D00086362 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDE7B08B1C45F15D00086362 /* VideoCell.xib */; };
@@ -83,6 +86,9 @@
 
 /* Begin PBXFileReference section */
 		FD3F928D1C3E559F00808ECB /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseController.swift; path = 02.Controllers/BaseController.swift; sourceTree = "<group>"; };
+		FD45C3441C4DE3A500B34255 /* ChatItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatItemCell.swift; path = 02.Controllers/ChatItemCell.swift; sourceTree = "<group>"; };
+		FD45C3461C4DE3C000B34255 /* ChatItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChatItemCell.xib; path = 02.Controllers/ChatItemCell.xib; sourceTree = "<group>"; };
+		FD45C3481C4DEB4B00B34255 /* ConversationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversationModel.swift; path = 00.Models/ConversationModel.swift; sourceTree = "<group>"; };
 		FD57D6521C3CCC4100DEDDCC /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginController.swift; path = 02.Controllers/LoginController.swift; sourceTree = "<group>"; };
 		FD57D6541C3CCC5300DEDDCC /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterController.swift; path = 02.Controllers/RegisterController.swift; sourceTree = "<group>"; };
 		FD57D6571C3CCCEE00DEDDCC /* VideoDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoDetailController.swift; path = 02.Controllers/VideoDetailController.swift; sourceTree = "<group>"; };
@@ -110,7 +116,7 @@
 		FDCC5B671C44DD21005BFD5F /* MenuHeaderLogined.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuHeaderLogined.xib; path = 02.Controllers/MenuHeaderLogined.xib; sourceTree = "<group>"; };
 		FDCC5B6A1C44E8D9005BFD5F /* MenuHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuHeader.xib; path = 02.Controllers/MenuHeader.xib; sourceTree = "<group>"; };
 		FDD3A48D1C4749300019AE84 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		FDDB581A1C4CEBF6007C24B6 /* EXRecordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EXRecordController.swift; path = 02.Controllers/EXRecordController.swift; sourceTree = "<group>"; };
+		FDDB581A1C4CEBF6007C24B6 /* RecordController+AVCam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "RecordController+AVCam.swift"; path = "02.Controllers/RecordController+AVCam.swift"; sourceTree = "<group>"; };
 		FDDB99141C4DC5790043791B /* PreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreView.swift; path = 02.Controllers/PreView.swift; sourceTree = "<group>"; };
 		FDE7B0881C45F0E900086362 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoCell.swift; path = 02.Controllers/VideoCell.swift; sourceTree = "<group>"; };
 		FDE7B08B1C45F15D00086362 /* VideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VideoCell.xib; path = 02.Controllers/VideoCell.xib; sourceTree = "<group>"; };
@@ -172,6 +178,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD45C3421C4DE2A200B34255 /* 00.ChatCell */ = {
+			isa = PBXGroup;
+			children = (
+				FD45C3441C4DE3A500B34255 /* ChatItemCell.swift */,
+				FD45C3461C4DE3C000B34255 /* ChatItemCell.xib */,
+			);
+			name = 00.ChatCell;
+			sourceTree = "<group>";
+		};
+		FD45C3431C4DE36200B34255 /* 02.CustomControl */ = {
+			isa = PBXGroup;
+			children = (
+				FD45C3421C4DE2A200B34255 /* 00.ChatCell */,
+			);
+			name = 02.CustomControl;
+			sourceTree = "<group>";
+		};
 		FD57D6501C3CCB2C00DEDDCC /* 00.SlideMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,7 +307,7 @@
 			children = (
 				FD57D6641C3CCD9900DEDDCC /* RecordController.swift */,
 				FDDB99141C4DC5790043791B /* PreView.swift */,
-				FDDB581A1C4CEBF6007C24B6 /* EXRecordController.swift */,
+				FDDB581A1C4CEBF6007C24B6 /* RecordController+AVCam.swift */,
 			);
 			name = RecordController;
 			sourceTree = "<group>";
@@ -388,6 +411,7 @@
 			isa = PBXGroup;
 			children = (
 				FDE7B08D1C46233B00086362 /* VideoModel.swift */,
+				FD45C3481C4DEB4B00B34255 /* ConversationModel.swift */,
 			);
 			name = 00.Models;
 			sourceTree = "<group>";
@@ -421,6 +445,7 @@
 			children = (
 				FD57D66F1C3CCECC00DEDDCC /* 00.Extensions */,
 				FD57D6701C3CCED700DEDDCC /* 01.App */,
+				FD45C3431C4DE36200B34255 /* 02.CustomControl */,
 			);
 			name = 01.Common;
 			sourceTree = "<group>";
@@ -529,6 +554,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD45C3471C4DE3C000B34255 /* ChatItemCell.xib in Resources */,
 				FDFFEA8C1C3A03D900130400 /* LaunchScreen.storyboard in Resources */,
 				FDCC5B681C44DD21005BFD5F /* MenuHeaderLogined.xib in Resources */,
 				FDE7B08C1C45F15D00086362 /* VideoCell.xib in Resources */,
@@ -563,6 +589,7 @@
 				FDFFEABC1C3A177300130400 /* AppDelegate.swift in Sources */,
 				FD57D66C1C3CCE1200DEDDCC /* VisitterProfileController.swift in Sources */,
 				FDE7B0AC1C4645BB00086362 /* Result.swift in Sources */,
+				FD45C3491C4DEB4B00B34255 /* ConversationModel.swift in Sources */,
 				FDE7B0891C45F0E900086362 /* VideoCell.swift in Sources */,
 				FDE7B0A61C4645BB00086362 /* Manager.swift in Sources */,
 				FDE7B0AA1C4645BB00086362 /* Response.swift in Sources */,
@@ -576,6 +603,7 @@
 				FD57D67C1C3CD36D00DEDDCC /* Master.swift in Sources */,
 				FDE7B0A41C4645BB00086362 /* Download.swift in Sources */,
 				FD57D6681C3CCDC000DEDDCC /* UserProfileController.swift in Sources */,
+				FD45C3451C4DE3A500B34255 /* ChatItemCell.swift in Sources */,
 				FD7286B61C43B3D1007632B6 /* UIViewController.swift in Sources */,
 				FDE7B0A51C4645BB00086362 /* Error.swift in Sources */,
 				FDCC5B5A1C44AE1A005BFD5F /* MenuCell.swift in Sources */,
@@ -587,7 +615,7 @@
 				FDE7B0AB1C4645BB00086362 /* ResponseSerialization.swift in Sources */,
 				FD57D6551C3CCC5300DEDDCC /* RegisterController.swift in Sources */,
 				FD57D66E1C3CCE9800DEDDCC /* MenuController.swift in Sources */,
-				FDDB581B1C4CEBF6007C24B6 /* EXRecordController.swift in Sources */,
+				FDDB581B1C4CEBF6007C24B6 /* RecordController+AVCam.swift in Sources */,
 				FD3F928E1C3E559F00808ECB /* BaseController.swift in Sources */,
 				FD57D6581C3CCCEE00DEDDCC /* VideoDetailController.swift in Sources */,
 				FDEA9E591C42509A005E8651 /* SlideMenuController.swift in Sources */,

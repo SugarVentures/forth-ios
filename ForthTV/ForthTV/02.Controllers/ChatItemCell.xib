@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChatItemCell" customModule="ForthTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="117"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M54-6p-ADE" userLabel="ChatItemContent">
+                    <rect key="frame" x="10" y="4" width="300" height="109"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_small" translatesAutoresizingMaskIntoConstraints="NO" id="a2j-5F-j0m">
+                            <rect key="frame" x="5" y="10" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="5Dd-ey-VNF"/>
+                                <constraint firstAttribute="height" constant="40" id="gxw-eG-7bj"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioL-N1-qAa">
+                            <rect key="frame" x="65" y="5" width="230" height="84"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="84" id="zHE-Yd-c9T"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.83593183260000004" green="0.51865871939999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="a2j-5F-j0m" firstAttribute="top" secondItem="M54-6p-ADE" secondAttribute="top" constant="10" id="4Jo-Og-oPc"/>
+                        <constraint firstItem="ioL-N1-qAa" firstAttribute="top" secondItem="M54-6p-ADE" secondAttribute="top" constant="5" id="C7g-Ep-AlW"/>
+                        <constraint firstItem="a2j-5F-j0m" firstAttribute="leading" secondItem="M54-6p-ADE" secondAttribute="leading" constant="5" id="Xnt-R2-KKx"/>
+                        <constraint firstAttribute="trailing" secondItem="ioL-N1-qAa" secondAttribute="trailing" constant="5" id="jJu-p6-cuR"/>
+                        <constraint firstItem="ioL-N1-qAa" firstAttribute="leading" secondItem="a2j-5F-j0m" secondAttribute="trailing" constant="20" id="vka-VN-gPr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <accessibility key="accessibilityConfiguration" identifier="ChatItemCell"/>
+            <constraints>
+                <constraint firstItem="M54-6p-ADE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="QMJ-5q-qPT"/>
+                <constraint firstItem="M54-6p-ADE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="S5d-cG-rPX"/>
+                <constraint firstAttribute="bottom" secondItem="M54-6p-ADE" secondAttribute="bottom" constant="4" id="iRE-aQ-xZp"/>
+                <constraint firstAttribute="trailing" secondItem="M54-6p-ADE" secondAttribute="trailing" constant="10" id="quo-aC-5pp"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="avatar" destination="a2j-5F-j0m" id="hHL-VI-hk2"/>
+                <outlet property="chatContent" destination="ioL-N1-qAa" id="naW-Hg-bfr"/>
+                <outlet property="chatItemContent" destination="M54-6p-ADE" id="iuf-oU-Lvu"/>
+            </connections>
+            <point key="canvasLocation" x="328" y="33.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatar_small" width="20" height="20"/>
+    </resources>
+</document>

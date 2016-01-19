@@ -33,3 +33,6 @@ let THEME_LIGHT_GRAY:UIColor = UIColor(hex: "cecece")
 
 // Default Values
 let MENU_ARRAY : [String] = ["Streaming Video Live", "Menu 2", "Menu 3"]
+
+// Recording Page
+let RECORDING_PAGE_CHATTABLE_ROWS =  3
