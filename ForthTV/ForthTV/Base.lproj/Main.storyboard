@@ -385,13 +385,140 @@
             </objects>
             <point key="canvasLocation" x="317" y="1545"/>
         </scene>
+        <!--VideoDetailController-->
+        <scene sceneID="10W-kq-TXS">
+            <objects>
+                <viewController storyboardIdentifier="VideoDetailController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dhI-cz-ylT" userLabel="VideoDetailController" customClass="VideoDetailController" customModule="ForthTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qfg-gb-Sea"/>
+                        <viewControllerLayoutGuide type="bottom" id="854-La-IVY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9R8-a0-daN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="leD-7p-h1g" userLabel="VideoView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="210"/>
+                                <color key="backgroundColor" red="0.83593183260000004" green="0.51865871939999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ui-TS-QVR" userLabel="TitleView">
+                                <rect key="frame" x="0.0" y="210" width="600" height="50"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="avatar_small" translatesAutoresizingMaskIntoConstraints="NO" id="gEj-i1-12H" userLabel="Avatar">
+                                        <rect key="frame" x="5" y="5" width="40" height="40"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="God of war is streaming War of Warcraft" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XrQ-jU-dNI">
+                                        <rect key="frame" x="53" y="14" width="539" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.37323347740000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hSG-bh-JaF" userLabel="CenterView">
+                                <rect key="frame" x="0.0" y="260" width="600" height="50"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_view" translatesAutoresizingMaskIntoConstraints="NO" id="m2F-4S-PWd">
+                                        <rect key="frame" x="16" y="11" width="30" height="30"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="45K" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4W-pw-ATk">
+                                        <rect key="frame" x="54" y="16" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_like" translatesAutoresizingMaskIntoConstraints="NO" id="O0O-KD-a18">
+                                        <rect key="frame" x="151" y="10" width="30" height="30"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="45K" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2Q-2a-gpY" userLabel="Like">
+                                        <rect key="frame" x="192" y="15" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPd-cu-MU2">
+                                        <rect key="frame" x="482" y="10" width="110" height="30"/>
+                                        <color key="backgroundColor" red="0.83593183260000004" green="0.51865871939999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="LIKE"/>
+                                        <connections>
+                                            <action selector="likeTapped:" destination="dhI-cz-ylT" eventType="touchUpInside" id="NMq-A3-sG6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.33305177540000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EEY-35-vF4" userLabel="ChatView">
+                                <rect key="frame" x="0.0" y="310" width="600" height="290"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y6e-dg-Cxg" userLabel="ChatTable">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="240"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="dhI-cz-ylT" id="phx-Ka-zcb"/>
+                                            <outlet property="delegate" destination="dhI-cz-ylT" id="mZS-vg-3d1"/>
+                                        </connections>
+                                    </tableView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E9o-1o-8F4" userLabel="ChatControl">
+                                        <rect key="frame" x="0.0" y="240" width="600" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZUm-Xa-FbI">
+                                                <rect key="frame" x="8" y="10" width="487" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoP-CR-tQj" userLabel="Send_Button">
+                                                <rect key="frame" x="503" y="5" width="40" height="40"/>
+                                                <state key="normal" image="icon_send"/>
+                                                <connections>
+                                                    <action selector="sendMessageTapped:" destination="dhI-cz-ylT" eventType="touchUpInside" id="hIZ-n7-UoA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwH-Yl-X18" userLabel="Emotion_Button">
+                                                <rect key="frame" x="552" y="5" width="40" height="40"/>
+                                                <state key="normal" image="icon_emoticon"/>
+                                                <connections>
+                                                    <action selector="emotionTapped:" destination="dhI-cz-ylT" eventType="touchUpInside" id="5vi-TV-LiK"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.93290513340000003" green="1" blue="0.074930098060000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.081942766769999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="centerView" destination="hSG-bh-JaF" id="Hl8-qX-y2b"/>
+                        <outlet property="chatTable" destination="y6e-dg-Cxg" id="9cn-ME-NWv"/>
+                        <outlet property="chatView" destination="EEY-35-vF4" id="rfu-sc-95U"/>
+                        <outlet property="emotionButton" destination="bwH-Yl-X18" id="Ky3-yT-dot"/>
+                        <outlet property="gameChannel" destination="XrQ-jU-dNI" id="mv0-VA-m5W"/>
+                        <outlet property="imgAvatar" destination="gEj-i1-12H" id="r6c-S7-K7L"/>
+                        <outlet property="likeLabel" destination="j2Q-2a-gpY" id="pbC-bH-5Nd"/>
+                        <outlet property="messageTextfield" destination="ZUm-Xa-FbI" id="dAq-iJ-0Z9"/>
+                        <outlet property="sendButton" destination="RoP-CR-tQj" id="UxI-lg-cbE"/>
+                        <outlet property="titleView" destination="4ui-TS-QVR" id="eCH-j8-zht"/>
+                        <outlet property="videoView" destination="leD-7p-h1g" id="IXM-zr-IKR"/>
+                        <outlet property="viewLabel" destination="Z4W-pw-ATk" id="wFW-yU-IMH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MLn-kg-g9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-341" y="1183"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="avatar_small" width="20" height="20"/>
         <image name="icon_chatactive" width="30" height="30"/>
         <image name="icon_close" width="30" height="30"/>
         <image name="icon_createstream" width="30" height="30"/>
+        <image name="icon_emoticon" width="30" height="30"/>
         <image name="icon_like" width="30" height="30"/>
         <image name="icon_live" width="53" height="23"/>
+        <image name="icon_send" width="30" height="30"/>
         <image name="icon_switchcamera" width="30" height="30"/>
         <image name="icon_view" width="30" height="30"/>
         <image name="logo_big" width="284" height="113"/>
