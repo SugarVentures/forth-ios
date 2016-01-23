@@ -8,7 +8,9 @@
 
 import UIKit
 
-class VideoListController: BaseController, UITableViewDelegate, UITableViewDataSource {
+class VideoListController: BaseController,
+                           UITableViewDelegate,
+                           UITableViewDataSource {
 
     // MARK: UI
     @IBOutlet weak var videoListTable: UITableView!
@@ -66,6 +68,8 @@ class VideoListController: BaseController, UITableViewDelegate, UITableViewDataS
     // MARK: UITableViewDelegate
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
+        // Go to detail page
+        Master.sharedInstance.pushController(self, pageType: PageType.VIDEO_DETAIL, animated:true , object: nil)
         
     }
 }
