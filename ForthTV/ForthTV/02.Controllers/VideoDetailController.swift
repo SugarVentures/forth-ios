@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class VideoDetailController: BaseController,
                              UITableViewDelegate,
@@ -81,8 +83,10 @@ class VideoDetailController: BaseController,
     //MARK: Methods
     func configureForBeginning() {
         
+        // UI
+        
         // for videoView
-        videoView.backgroundColor = UIColor.clearColor()
+        //videoView.backgroundColor = UIColor.clearColor()
         
         // for titleView
         titleView.backgroundColor = UIColor.clearColor()
@@ -118,6 +122,7 @@ class VideoDetailController: BaseController,
         
         // for messageTextfield
         messageTextfield.textColor = THEME_LIGHT_GRAY
+        
     }
     
     
