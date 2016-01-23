@@ -35,6 +35,7 @@ class VideoDetailController: BaseController,
     @IBOutlet weak var emotionButton: UIButton!
     
     
+    
     //MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +48,7 @@ class VideoDetailController: BaseController,
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     //Mark: UITableViewDataSource
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -116,8 +118,8 @@ class VideoDetailController: BaseController,
         
         // for messageTextfield
         messageTextfield.textColor = THEME_LIGHT_GRAY
-        
     }
+    
     
     //MARK: Actions
     @IBAction func likeTapped(sender: AnyObject) {
@@ -128,8 +130,5 @@ class VideoDetailController: BaseController,
     
     @IBAction func emotionTapped(sender: AnyObject) {
     }
-    
-    
-    
     
 }

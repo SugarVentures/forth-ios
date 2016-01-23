@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        self.createMenuView();
+        self.configureForBeginning();
         return true
     }
 
@@ -51,7 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     // MARK: Internal Methods
-    private func createMenuView() {
+    private func configureForBeginning() {
         
         // style navigation
         UINavigationBar.appearance().barTintColor = UIColor(red: 234.0/255.0, green: 46.0/255.0, blue: 73.0/255.0, alpha: 1.0)
@@ -81,6 +81,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.backgroundColor = UIColor(red: 236.0, green: 238.0, blue: 241.0, alpha: 1.0)
         self.window?.rootViewController = slideController
         self.window?.makeKeyAndVisible()
+        
+        // Setting for keyboard
+        IQKeyboardManager.sharedManager().enable = true
+        
     }
 
 
