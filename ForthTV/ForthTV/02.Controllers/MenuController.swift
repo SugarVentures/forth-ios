@@ -74,13 +74,16 @@ class MenuController: BaseController,
         let menuCell: MenuCell = tableView.cellForRowAtIndexPath(indexPath) as! MenuCell
         menuCell.selected(true)
         
+        // close menu
+        kAppDelegate.slideController.closeLeft()
+        
     }
     
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
         
+         // style for cell
         let menuCell: MenuCell = tableView.cellForRowAtIndexPath(indexPath) as! MenuCell
         menuCell.selected(false)
-        
     }
     
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?

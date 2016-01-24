@@ -85,6 +85,9 @@ class VideoDetailController: BaseController,
         
         // UI
         
+        // for self.view
+        self.title = "NGN"
+        
         // for videoView
         //videoView.backgroundColor = UIColor.clearColor()
         
