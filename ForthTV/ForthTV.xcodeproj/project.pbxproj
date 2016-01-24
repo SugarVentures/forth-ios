@@ -48,6 +48,7 @@
 		FD7286B51C43B3D1007632B6 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7286B11C43B3D1007632B6 /* UIColor.swift */; };
 		FD7286B61C43B3D1007632B6 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7286B21C43B3D1007632B6 /* UIViewController.swift */; };
 		FDC52E361C4CABAD0083F436 /* TextValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC52E351C4CABAD0083F436 /* TextValues.swift */; };
+		FDC78FCF1C55116400C68E91 /* CustomTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC78FCE1C55116400C68E91 /* CustomTab.swift */; };
 		FDCC5B5A1C44AE1A005BFD5F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC5B591C44AE1A005BFD5F /* MenuCell.swift */; };
 		FDCC5B5C1C44AE61005BFD5F /* MenuHeaderLogined.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC5B5B1C44AE61005BFD5F /* MenuHeaderLogined.swift */; };
 		FDCC5B5E1C44AF99005BFD5F /* MenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC5B5D1C44AF99005BFD5F /* MenuHeader.swift */; };
@@ -144,6 +145,7 @@
 		FD7286B11C43B3D1007632B6 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = 01.Common/UIColor.swift; sourceTree = "<group>"; };
 		FD7286B21C43B3D1007632B6 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = 01.Common/UIViewController.swift; sourceTree = "<group>"; };
 		FDC52E351C4CABAD0083F436 /* TextValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextValues.swift; path = 01.Common/TextValues.swift; sourceTree = "<group>"; };
+		FDC78FCE1C55116400C68E91 /* CustomTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTab.swift; path = 02.Controllers/CustomTab.swift; sourceTree = "<group>"; };
 		FDCC5B591C44AE1A005BFD5F /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuCell.swift; path = 02.Controllers/MenuCell.swift; sourceTree = "<group>"; };
 		FDCC5B5B1C44AE61005BFD5F /* MenuHeaderLogined.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuHeaderLogined.swift; path = 02.Controllers/MenuHeaderLogined.swift; sourceTree = "<group>"; };
 		FDCC5B5D1C44AF99005BFD5F /* MenuHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuHeader.swift; path = 02.Controllers/MenuHeader.swift; sourceTree = "<group>"; };
@@ -329,6 +331,7 @@
 				FDFFEAB71C3A177300130400 /* AccountController.swift */,
 				FD3A95BE1C537A1D00CF734F /* 00.LoginView */,
 				FD3A95C11C537A5700CF734F /* 01.RegisterView */,
+				FDC78FCD1C55110800C68E91 /* 03.TabsCustom */,
 			);
 			name = 01.Account;
 			sourceTree = "<group>";
@@ -380,6 +383,14 @@
 				FD57D6731C3CCF2D00DEDDCC /* ServiceConfigure.swift */,
 			);
 			name = 01.App;
+			sourceTree = "<group>";
+		};
+		FDC78FCD1C55110800C68E91 /* 03.TabsCustom */ = {
+			isa = PBXGroup;
+			children = (
+				FDC78FCE1C55116400C68E91 /* CustomTab.swift */,
+			);
+			name = 03.TabsCustom;
 			sourceTree = "<group>";
 		};
 		FDCC5B581C44ADBD005BFD5F /* 00.MenuController */ = {
@@ -723,6 +734,7 @@
 				FDE7B08E1C46233B00086362 /* VideoModel.swift in Sources */,
 				FDDB99151C4DC5790043791B /* PreView.swift in Sources */,
 				FDCC5B5C1C44AE61005BFD5F /* MenuHeaderLogined.swift in Sources */,
+				FDC78FCF1C55116400C68E91 /* CustomTab.swift in Sources */,
 				FDCC5B5E1C44AF99005BFD5F /* MenuHeader.swift in Sources */,
 				FDC52E361C4CABAD0083F436 /* TextValues.swift in Sources */,
 				FD7286B31C43B3D1007632B6 /* String.swift in Sources */,
