@@ -96,7 +96,7 @@ class RegisterView: UIView ,
         dateOfBirthTextfield.placeholder = "DATE OF BIRTH"
         
         // for registerButton
-        registerButton.titleLabel?.textColor = UIColor.whiteColor()
+        registerButton.tintColor = UIColor.whiteColor()
         registerButton.backgroundColor = THEME_YELLOW_COLOR
         registerButton.layer.cornerRadius = 4.0
         registerButton.titleLabel?.text = "REGISTER"

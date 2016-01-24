@@ -73,13 +73,13 @@ class LoginView: UIView {
         
         // for registerButton
         loginButton.titleLabel?.text = "SIGN IN"
-        loginButton.titleLabel?.textColor = UIColor.whiteColor()
+        loginButton.titleLabel?.tintColor = UIColor.whiteColor()
         loginButton.backgroundColor = THEME_YELLOW_COLOR
         loginButton.layer.cornerRadius = 4.0
        
         //for forgotPassword
         forgotPassword.titleLabel?.text = "FORGOT PASSWORD"
-        forgotPassword.titleLabel?.textColor = UIColor.redColor()
+        forgotPassword.titleLabel?.tintColor = UIColor.whiteColor()
         forgotPassword.backgroundColor = UIColor.clearColor()
         
         

@@ -19,8 +19,8 @@ class AccountController: BaseController,
 
     // MARK: UI
     @IBOutlet weak var mainView: UIView!
-    @IBOutlet weak var signinButton: UIButton!
-    @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var signinButton: CustomTab!
+    @IBOutlet weak var registerButton: CustomTab!
     
     // MARK: Properties
     var loginView: LoginView?
@@ -74,6 +74,14 @@ class AccountController: BaseController,
         // for mainView
         mainView.backgroundColor = THEME_BLUE_COLOR
         
+        // for signinButton
+        signinButton.backgroundColor = UIColor.clearColor()
+        signinButton.tintColor = UIColor.whiteColor()
+        
+        // for registerButton
+        registerButton.backgroundColor = UIColor.clearColor()
+        registerButton.tintColor = UIColor.whiteColor()
+        
         // for loginView
         loginView = UIView.fromNib()
         loginView?.delegate = self
@@ -90,6 +98,12 @@ class AccountController: BaseController,
     
     private func changeToView() {
         
+        layoutforTabs()
+        layoutForViews()
+    }
+    
+    private func layoutForViews() {
+        
         if accountViewType ==  .LOGIN
         {
             mainView.bringSubviewToFront(loginView!)
@@ -98,13 +112,32 @@ class AccountController: BaseController,
         {
             mainView.bringSubviewToFront(registerView!)
         }
+        
+    }
+    
+    private func layoutforTabs() {
+    
+        if accountViewType ==  .LOGIN
+        {
+            // change signinButton -> true
+            signinButton.setTabSelected(true)
+            
+            // change registerButton -> false
+            registerButton.setTabSelected(false)
+        }
+        else
+        {
+            // change registerButton -> true
+            registerButton.setTabSelected(true)
+            
+            // change signinButton -> false
+            signinButton.setTabSelected(false)
+        }
     }
     
     // MARK: Actions
     @IBAction func signinTapped(sender: AnyObject) {
-        
-        // change signinButton
-        
+       
         // change to loginView
         accountViewType = .LOGIN
         changeToView()
@@ -112,9 +145,7 @@ class AccountController: BaseController,
     }
     
     @IBAction func registerTapped(sender: AnyObject) {
-        
-        // change registerButton
-        
+      
         // change to registerView
         accountViewType = .REGISTER
         changeToView()

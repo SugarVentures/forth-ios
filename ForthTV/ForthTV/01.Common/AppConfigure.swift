@@ -31,6 +31,10 @@ let THEME_RED_COLOR:UIColor = UIColor(hex: "ed1f24")
 let THEME_DARK_GRAY:UIColor = UIColor(hex: "2e2e2e")
 let THEME_LIGHT_GRAY:UIColor = UIColor(hex: "cecece")
 
+// Defaut Fonts
+let FORTH_FONT_17: UIFont = UIFont.systemFontOfSize(17.0)
+let FORTH_FONT_14: UIFont = UIFont.systemFontOfSize(14.0)
+
 // Default Values
 let kAppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
 

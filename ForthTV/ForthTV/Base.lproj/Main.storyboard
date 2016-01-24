@@ -620,8 +620,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pS-T6-Zhe">
-                                <rect key="frame" x="0.0" y="64" width="300" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pS-T6-Zhe" customClass="CustomTab" customModule="ForthTV" customModuleProvider="target">
+                                <rect key="frame" x="12" y="30" width="288" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.010267665139987225" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="TBd-hC-Opu"/>
@@ -631,8 +631,8 @@
                                     <action selector="signinTapped:" destination="xTO-6X-cF7" eventType="touchUpInside" id="dgM-4F-sam"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UoO-lZ-T14" userLabel="REGISTER">
-                                <rect key="frame" x="300" y="64" width="300" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UoO-lZ-T14" userLabel="REGISTER" customClass="CustomTab" customModule="ForthTV" customModuleProvider="target">
+                                <rect key="frame" x="300" y="30" width="288" height="40"/>
                                 <color key="backgroundColor" red="0.89333794730000005" green="1" blue="0.49506728059999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="REGISTER"/>
                                 <connections>
@@ -640,27 +640,27 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3th-JT-uhL" userLabel="MainView">
-                                <rect key="frame" x="0.0" y="104" width="600" height="496"/>
+                                <rect key="frame" x="0.0" y="70" width="600" height="530"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.37323347740000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3th-JT-uhL" firstAttribute="leading" secondItem="wPW-5l-cZ9" secondAttribute="leadingMargin" constant="-20" id="8Es-Pm-6Ve"/>
-                            <constraint firstItem="3pS-T6-Zhe" firstAttribute="top" secondItem="fIk-zF-cQb" secondAttribute="bottom" id="8V0-zF-wgn"/>
+                            <constraint firstItem="3pS-T6-Zhe" firstAttribute="top" secondItem="fIk-zF-cQb" secondAttribute="bottom" constant="10" id="8V0-zF-wgn"/>
                             <constraint firstItem="A6c-HU-GYt" firstAttribute="top" secondItem="3th-JT-uhL" secondAttribute="bottom" id="95F-5s-4Lk"/>
                             <constraint firstItem="UoO-lZ-T14" firstAttribute="leading" secondItem="3pS-T6-Zhe" secondAttribute="trailing" id="Ap4-LF-azP"/>
                             <constraint firstItem="UoO-lZ-T14" firstAttribute="width" secondItem="3pS-T6-Zhe" secondAttribute="width" id="D8n-4Q-Egz"/>
                             <constraint firstItem="3th-JT-uhL" firstAttribute="top" secondItem="UoO-lZ-T14" secondAttribute="bottom" id="VVc-By-jjG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="UoO-lZ-T14" secondAttribute="trailing" constant="-20" id="XqP-jf-K1Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UoO-lZ-T14" secondAttribute="trailing" constant="-8" id="XqP-jf-K1Z"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3th-JT-uhL" secondAttribute="trailing" constant="-20" id="awn-Pe-SHY"/>
-                            <constraint firstItem="3pS-T6-Zhe" firstAttribute="leading" secondItem="wPW-5l-cZ9" secondAttribute="leadingMargin" constant="-20" id="cAg-bi-dWk"/>
-                            <constraint firstItem="UoO-lZ-T14" firstAttribute="top" secondItem="fIk-zF-cQb" secondAttribute="bottom" id="oh0-Mw-uQq"/>
+                            <constraint firstItem="3pS-T6-Zhe" firstAttribute="leading" secondItem="wPW-5l-cZ9" secondAttribute="leadingMargin" constant="-8" id="cAg-bi-dWk"/>
+                            <constraint firstItem="UoO-lZ-T14" firstAttribute="top" secondItem="fIk-zF-cQb" secondAttribute="bottom" constant="10" id="oh0-Mw-uQq"/>
                             <constraint firstItem="UoO-lZ-T14" firstAttribute="leading" secondItem="3pS-T6-Zhe" secondAttribute="trailing" id="pkh-fS-0Ot"/>
                             <constraint firstItem="UoO-lZ-T14" firstAttribute="height" secondItem="3pS-T6-Zhe" secondAttribute="height" id="qfj-85-40X"/>
                         </constraints>
                     </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="mainView" destination="3th-JT-uhL" id="QSM-Ck-1TV"/>
                         <outlet property="registerButton" destination="UoO-lZ-T14" id="tYM-gD-Zuj"/>
