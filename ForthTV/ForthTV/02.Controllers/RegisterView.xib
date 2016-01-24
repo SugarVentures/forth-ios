@@ -10,8 +10,46 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RegisterView" customModule="ForthTV" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="left" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X4f-rx-52u" userLabel="UserName">
+                    <rect key="frame" x="36" y="43" width="528" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kQG-qg-D6z" userLabel="Email">
+                    <rect key="frame" x="36" y="97" width="528" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="left" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WJk-4z-LGE" userLabel="Password">
+                    <rect key="frame" x="36" y="153" width="528" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SdW-dw-p5t" userLabel="DateOfBirth">
+                    <rect key="frame" x="36" y="207" width="528" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XET-RI-xlg">
+                    <rect key="frame" x="36" y="262" width="528" height="30"/>
+                    <state key="normal" title="REGISTER"/>
+                    <connections>
+                        <action selector="registerTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="BDN-qC-VwL"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <accessibility key="accessibilityConfiguration" identifier="RegisterView"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <connections>
+                <outlet property="dateOfBirthTextfield" destination="SdW-dw-p5t" id="LmZ-5B-8Od"/>
+                <outlet property="emailTextfield" destination="kQG-qg-D6z" id="Ynd-iK-UZn"/>
+                <outlet property="passwordTextfield" destination="WJk-4z-LGE" id="dSQ-bN-Oee"/>
+                <outlet property="registerButton" destination="XET-RI-xlg" id="8F9-Qd-os8"/>
+                <outlet property="userNameTextfield" destination="X4f-rx-52u" id="Pf9-RB-Nfc"/>
+            </connections>
         </view>
     </objects>
 </document>

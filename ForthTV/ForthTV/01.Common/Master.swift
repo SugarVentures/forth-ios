@@ -48,6 +48,18 @@ class Master: NSObject {
         currentController.navigationController?.pushViewController(controller, animated: animated)
     }
     
+    func pushController(pageType:PageType, animated:Bool, object:Any?)
+    {
+        let controller = self.getController(pageType)
+        controller.setObject(object)
+        kAppDelegate.slideController.closeLeft()
+        kAppDelegate.navigationController?.pushViewController(controller, animated: animated)
+    }
+    func openMenu ()
+    {
+        kAppDelegate.slideController.openLeft()
+    }
+    
     func getController(pageType:PageType)-> BaseController
     {
         var storyboardName:String;

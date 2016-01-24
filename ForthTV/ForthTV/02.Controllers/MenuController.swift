@@ -8,7 +8,11 @@
 
 import UIKit
 
-class MenuController: BaseController, UITableViewDelegate, UITableViewDataSource {
+class MenuController: BaseController,
+                      UITableViewDelegate,
+                      UITableViewDataSource,
+                      MenuHeaderDelegate
+{
     
     // MARK: UI
     @IBOutlet weak var menuTable: UITableView!
@@ -90,6 +94,8 @@ class MenuController: BaseController, UITableViewDelegate, UITableViewDataSource
             menuHeader = UIView.fromNib()
 
         }
+        menuHeader?.delegate = self
+        
         return menuHeader
         
         
@@ -105,5 +111,18 @@ class MenuController: BaseController, UITableViewDelegate, UITableViewDataSource
 //        return menuHeaderLogged
         
     }
-
+    
+    // MARK: MenuHeaderDelegate
+    func buttonTapped(buttonType: HEADER_BUTTON_TYPE) {
+        
+        if buttonType == .LOGIN {
+            
+            Master.sharedInstance.pushController(.ACCOUNT, animated: true, object: ACCOUNT_VIEW_TYPE.LOGIN)
+        }
+        else {
+            
+             Master.sharedInstance.pushController(.ACCOUNT, animated: true, object: ACCOUNT_VIEW_TYPE.REGISTER)
+        }
+        
+    }
 }

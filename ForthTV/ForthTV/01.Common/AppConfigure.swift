@@ -32,6 +32,9 @@ let THEME_DARK_GRAY:UIColor = UIColor(hex: "2e2e2e")
 let THEME_LIGHT_GRAY:UIColor = UIColor(hex: "cecece")
 
 // Default Values
+let kAppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+
+// MenuPage
 let MENU_ARRAY : [String] = ["Streaming Video Live", "Menu 2", "Menu 3"]
 
 // Recording Page

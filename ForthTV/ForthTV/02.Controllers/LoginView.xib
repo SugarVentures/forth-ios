@@ -10,8 +10,42 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="LoginView" customClass="LoginView" customModule="ForthTV" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="left" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xBx-Wn-EIz" userLabel="Email">
+                    <rect key="frame" x="46" y="78" width="528" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U6n-uX-CKy" userLabel="Password">
+                    <rect key="frame" x="46" y="132" width="528" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4B-Qq-ia8">
+                    <rect key="frame" x="46" y="185" width="528" height="30"/>
+                    <state key="normal" title="LOGIN"/>
+                    <connections>
+                        <action selector="loginTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="juo-c2-oxG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEU-lW-LyL">
+                    <rect key="frame" x="230" y="252" width="160" height="30"/>
+                    <state key="normal" title="FORGOT PASSWORD?"/>
+                    <connections>
+                        <action selector="forgotPassword:" destination="iN0-l3-epB" eventType="touchUpInside" id="Cpj-pG-vYx"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <accessibility key="accessibilityConfiguration" identifier="LoginView"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <connections>
+                <outlet property="emailTextfield" destination="xBx-Wn-EIz" id="7Pm-Ce-A8U"/>
+                <outlet property="forgotPassword" destination="UEU-lW-LyL" id="6hD-bV-vi7"/>
+                <outlet property="loginButton" destination="e4B-Qq-ia8" id="upE-i3-ndG"/>
+                <outlet property="passwordTextfield" destination="U6n-uX-CKy" id="S9V-9I-az4"/>
+            </connections>
         </view>
     </objects>
 </document>
