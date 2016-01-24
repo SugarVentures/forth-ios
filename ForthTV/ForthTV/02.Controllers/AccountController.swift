@@ -68,14 +68,22 @@ class AccountController: BaseController,
     // MARK: Methods
     private func configureForBeginning() {
         
+        // for view
+        self.view.backgroundColor = THEME_BLUE_COLOR
+        
+        // for mainView
+        mainView.backgroundColor = THEME_BLUE_COLOR
+        
         // for loginView
         loginView = UIView.fromNib()
         loginView?.delegate = self
+        loginView?.backgroundColor = THEME_BLUE_COLOR
         mainView.addSubview(loginView!)
         
         // for registerView
         registerView = UIView.fromNib()
         registerView?.delegate = self
+        registerView?.backgroundColor = THEME_BLUE_COLOR
         mainView.addSubview(registerView!)
         
     }

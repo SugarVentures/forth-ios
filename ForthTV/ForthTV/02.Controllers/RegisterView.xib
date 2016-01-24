@@ -11,28 +11,51 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="left" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X4f-rx-52u" userLabel="UserName">
-                    <rect key="frame" x="36" y="43" width="528" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="left" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X4f-rx-52u" userLabel="UserName">
+                    <rect key="frame" x="15" y="40" width="570" height="40"/>
+                    <color key="backgroundColor" red="0.93290513340000003" green="1" blue="0.074930098060000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="eCW-Wn-lJg"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kQG-qg-D6z" userLabel="Email">
-                    <rect key="frame" x="36" y="97" width="528" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kQG-qg-D6z" userLabel="Email">
+                    <rect key="frame" x="15" y="95" width="570" height="40"/>
+                    <color key="backgroundColor" red="0.93290513340000003" green="1" blue="0.074930098060000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="B8D-iz-vfb"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="left" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WJk-4z-LGE" userLabel="Password">
-                    <rect key="frame" x="36" y="153" width="528" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="left" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WJk-4z-LGE" userLabel="Password">
+                    <rect key="frame" x="15" y="150" width="570" height="40"/>
+                    <color key="backgroundColor" red="0.93290513340000003" green="1" blue="0.074930098060000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="gzy-l5-xV7"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SdW-dw-p5t" userLabel="DateOfBirth">
-                    <rect key="frame" x="36" y="207" width="528" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SdW-dw-p5t" userLabel="DateOfBirth">
+                    <rect key="frame" x="15" y="205" width="570" height="40"/>
+                    <color key="backgroundColor" red="0.93290513340000003" green="1" blue="0.074930098060000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="O1v-2O-ctP"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="dobEdingChange:" destination="iN0-l3-epB" eventType="editingDidBegin" id="APQ-52-d4f"/>
+                    </connections>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XET-RI-xlg">
-                    <rect key="frame" x="36" y="262" width="528" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XET-RI-xlg">
+                    <rect key="frame" x="15" y="260" width="570" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.37323347740000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="gaA-kv-gne"/>
+                    </constraints>
                     <state key="normal" title="REGISTER"/>
                     <connections>
                         <action selector="registerTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="BDN-qC-VwL"/>
@@ -41,6 +64,23 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <accessibility key="accessibilityConfiguration" identifier="RegisterView"/>
+            <constraints>
+                <constraint firstItem="SdW-dw-p5t" firstAttribute="trailing" secondItem="WJk-4z-LGE" secondAttribute="trailing" id="17o-fC-j1n"/>
+                <constraint firstItem="SdW-dw-p5t" firstAttribute="top" secondItem="WJk-4z-LGE" secondAttribute="bottom" constant="15" id="4AB-hY-wuC"/>
+                <constraint firstItem="kQG-qg-D6z" firstAttribute="top" secondItem="X4f-rx-52u" secondAttribute="bottom" constant="15" id="8zM-bA-iPE"/>
+                <constraint firstItem="WJk-4z-LGE" firstAttribute="leading" secondItem="kQG-qg-D6z" secondAttribute="leading" id="CwM-ea-U0U"/>
+                <constraint firstItem="X4f-rx-52u" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="Pb3-f9-8TO"/>
+                <constraint firstItem="SdW-dw-p5t" firstAttribute="leading" secondItem="XET-RI-xlg" secondAttribute="leading" id="Seo-XK-3C0"/>
+                <constraint firstItem="XET-RI-xlg" firstAttribute="top" secondItem="SdW-dw-p5t" secondAttribute="bottom" constant="15" id="WcR-b6-Q6R"/>
+                <constraint firstItem="kQG-qg-D6z" firstAttribute="leading" secondItem="X4f-rx-52u" secondAttribute="leading" id="Zq3-ki-IkK"/>
+                <constraint firstItem="WJk-4z-LGE" firstAttribute="top" secondItem="kQG-qg-D6z" secondAttribute="bottom" constant="15" id="b9C-bQ-145"/>
+                <constraint firstItem="SdW-dw-p5t" firstAttribute="trailing" secondItem="XET-RI-xlg" secondAttribute="trailing" id="elw-wJ-R9T"/>
+                <constraint firstItem="kQG-qg-D6z" firstAttribute="trailing" secondItem="X4f-rx-52u" secondAttribute="trailing" id="hGQ-Bp-ZV2"/>
+                <constraint firstItem="kQG-qg-D6z" firstAttribute="trailing" secondItem="WJk-4z-LGE" secondAttribute="trailing" id="oN7-ns-1Cy"/>
+                <constraint firstItem="X4f-rx-52u" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="psf-vh-TTh"/>
+                <constraint firstItem="WJk-4z-LGE" firstAttribute="leading" secondItem="SdW-dw-p5t" secondAttribute="leading" id="qwm-UL-W0c"/>
+                <constraint firstItem="X4f-rx-52u" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="zjM-CR-8Sb"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <connections>
