@@ -65,6 +65,7 @@ class RegisterView: UIView ,
         userNameTextfield.leftView = UIImageView(image: UIImage(named: "icon_username"))
         userNameTextfield.leftViewMode = .Always
         userNameTextfield.backgroundColor = UIColor.whiteColor()
+        userNameTextfield.textColor = THEME_DARK_GRAY
         userNameTextfield.layer.cornerRadius = 4.0
         userNameTextfield.placeholder = "USER NAME"
         
@@ -73,6 +74,7 @@ class RegisterView: UIView ,
         emailTextfield.leftViewMode = .Always
         emailTextfield.keyboardType = .EmailAddress
         emailTextfield.backgroundColor = UIColor.whiteColor()
+        emailTextfield.textColor = THEME_DARK_GRAY
         emailTextfield.layer.cornerRadius = 4.0
         emailTextfield.placeholder = "EMAIL"
         
@@ -81,6 +83,7 @@ class RegisterView: UIView ,
         passwordTextfield.leftViewMode = .Always
         passwordTextfield.secureTextEntry = true
         passwordTextfield.backgroundColor = UIColor.whiteColor()
+        passwordTextfield.textColor = THEME_DARK_GRAY
         passwordTextfield.layer.cornerRadius = 4.0
         passwordTextfield.placeholder = "PASSWORD"
         
@@ -88,6 +91,7 @@ class RegisterView: UIView ,
         dateOfBirthTextfield.leftView = UIImageView(image: UIImage(named: "icon_birthday"))
         dateOfBirthTextfield.leftViewMode = .Always
         dateOfBirthTextfield.backgroundColor = UIColor.whiteColor()
+        dateOfBirthTextfield.textColor = THEME_DARK_GRAY
         dateOfBirthTextfield.layer.cornerRadius = 4.0
         dateOfBirthTextfield.placeholder = "DATE OF BIRTH"
         
@@ -95,6 +99,7 @@ class RegisterView: UIView ,
         registerButton.titleLabel?.textColor = UIColor.whiteColor()
         registerButton.backgroundColor = THEME_YELLOW_COLOR
         registerButton.layer.cornerRadius = 4.0
+        registerButton.titleLabel?.text = "REGISTER"
        
     }
     

@@ -50,12 +50,13 @@
                         <action selector="dobEdingChange:" destination="iN0-l3-epB" eventType="editingDidBegin" id="APQ-52-d4f"/>
                     </connections>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XET-RI-xlg">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XET-RI-xlg">
                     <rect key="frame" x="15" y="260" width="570" height="40"/>
                     <color key="backgroundColor" red="0.0" green="1" blue="0.37323347740000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="gaA-kv-gne"/>
                     </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <state key="normal" title="REGISTER"/>
                     <connections>
                         <action selector="registerTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="BDN-qC-VwL"/>

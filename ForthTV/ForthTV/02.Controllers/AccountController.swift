@@ -96,10 +96,8 @@ class AccountController: BaseController,
         }
         else
         {
-             mainView.bringSubviewToFront(registerView!)
+            mainView.bringSubviewToFront(registerView!)
         }
-        
-        
     }
     
     // MARK: Actions
@@ -108,6 +106,7 @@ class AccountController: BaseController,
         // change signinButton
         
         // change to loginView
+        accountViewType = .LOGIN
         changeToView()
         
     }
@@ -117,6 +116,7 @@ class AccountController: BaseController,
         // change registerButton
         
         // change to registerView
+        accountViewType = .REGISTER
         changeToView()
         
     }
