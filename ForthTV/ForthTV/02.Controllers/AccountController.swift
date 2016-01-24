@@ -104,19 +104,18 @@ class AccountController: BaseController,
     
     private func layoutForViews() {
         
-        if accountViewType ==  .LOGIN
+        if self.accountViewType ==  .LOGIN
         {
-            mainView.bringSubviewToFront(loginView!)
+            Master.sharedInstance.flip(registerView!, toView: loginView!)
         }
         else
         {
-            mainView.bringSubviewToFront(registerView!)
+            Master.sharedInstance.flip(loginView!, toView: registerView!)
         }
-        
     }
     
     private func layoutforTabs() {
-    
+        
         if accountViewType ==  .LOGIN
         {
             // change signinButton -> true

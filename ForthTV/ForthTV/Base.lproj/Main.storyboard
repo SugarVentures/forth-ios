@@ -660,7 +660,6 @@
                             <constraint firstItem="UoO-lZ-T14" firstAttribute="height" secondItem="3pS-T6-Zhe" secondAttribute="height" id="qfj-85-40X"/>
                         </constraints>
                     </view>
-                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="mainView" destination="3th-JT-uhL" id="QSM-Ck-1TV"/>
                         <outlet property="registerButton" destination="UoO-lZ-T14" id="tYM-gD-Zuj"/>

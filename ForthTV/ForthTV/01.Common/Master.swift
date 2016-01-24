@@ -110,14 +110,17 @@ class Master: NSObject {
         
     }
     
-    //MARK: Common Methods
-    func delay(delay:Double, closure:()->()) {
-        dispatch_after(
-            dispatch_time(
-                DISPATCH_TIME_NOW,
-                Int64(delay * Double(NSEC_PER_SEC))
-            ),
-            dispatch_get_main_queue(), closure)
+    //MARK: Animation Methods
+    func flip(fromView:UIView, toView: UIView) {
+        let transitionOptions: UIViewAnimationOptions = [.TransitionFlipFromRight, .ShowHideTransitionViews]
+        
+        UIView.transitionWithView(fromView, duration: 0.75, options: transitionOptions, animations: {
+            fromView.hidden = true
+            }, completion: nil)
+        
+        UIView.transitionWithView(toView, duration: 0.75, options: transitionOptions, animations: {
+            toView.hidden = false
+            }, completion: nil)
     }
 
 }
